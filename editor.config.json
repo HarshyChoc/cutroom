@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "whisper": {
+    "model": "medium.en",
+    "language": "en"
+  },
+  "defaults": {
+    "fps": 30,
+    "width": 1080,
+    "height": 1920,
+    "captionPreset": "bold-center"
+  },
+  "mediaServerPort": 7878,
+  "framesPerVideo": 12
+}

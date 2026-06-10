@@ -1,0 +1,23 @@
+# dependencies & caches
+node_modules/
+.whisper/
+.remotion/
+*.log
+.DS_Store
+
+# media — footage and renders must NEVER be committed (use git add -f at your peril: don't)
+content/raw/*
+!content/raw/.gitkeep
+content/output/*
+!content/output/.gitkeep
+content/assets/music/*
+!content/assets/music/.gitkeep
+
+# per-video workspace: keep small JSON/markdown, ignore heavy media artifacts
+content/library/*/source.*
+content/library/*/media/
+content/library/*/frames/*.jpg
+content/library/*/frames/*.jpeg
+content/library/*/frames/*.png
+content/library/*/whisper-raw.json
+content/library/*/edits/*/qc/

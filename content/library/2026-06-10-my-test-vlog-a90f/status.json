@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "videoId": "2026-06-10-my-test-vlog-a90f",
+  "originalFilename": "My Test Vlog.mov",
+  "createdAt": "2026-06-10T16:01:47.609Z",
+  "steps": {
+    "ingested": "2026-06-10T16:01:47.609Z",
+    "mezzanine": null,
+    "proxy": null,
+    "audio": null,
+    "transcribed": null,
+    "frames": null,
+    "classified": null
+  },
+  "contentType": null,
+  "classification": null,
+  "renders": {},
+  "lastError": null
+}
