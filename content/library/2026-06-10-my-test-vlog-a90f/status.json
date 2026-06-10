@@ -5,11 +5,11 @@
   "createdAt": "2026-06-10T16:01:47.609Z",
   "steps": {
     "ingested": "2026-06-10T16:01:47.609Z",
-    "mezzanine": null,
-    "proxy": null,
-    "audio": null,
-    "transcribed": null,
-    "frames": null,
+    "mezzanine": "2026-06-10T16:05:49.830Z",
+    "proxy": "2026-06-10T16:05:50.785Z",
+    "audio": "2026-06-10T16:05:51.387Z",
+    "transcribed": "2026-06-10T16:07:59.517Z",
+    "frames": "2026-06-10T16:08:00.559Z",
     "classified": null
   },
   "contentType": null,

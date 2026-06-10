@@ -73,9 +73,11 @@ export const runSetup = async (options: SetupOptions): Promise<void> => {
   await checkXcodeClt();
 
   log.step("Creating directories");
-  const dirs = [RAW_DIR, LIBRARY_DIR, OUTPUT_DIR, MUSIC_DIR, BRANDING_DIR, WHISPER_DIR];
+  // NOTE: .whisper/ is intentionally NOT pre-created — installWhisperCpp
+  // treats an existing directory as "already installed" and skips the build.
+  const dirs = [RAW_DIR, LIBRARY_DIR, OUTPUT_DIR, MUSIC_DIR, BRANDING_DIR];
   await Promise.all(dirs.map((dir) => mkdir(dir, { recursive: true })));
-  log.ok("content/ and .whisper/ directories ready");
+  log.ok("content/ directories ready");
 
   const config = await loadConfig();
   log.ok("editor.config.json loaded");
