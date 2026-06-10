@@ -7,7 +7,7 @@ import {
 import { ensureBrowser } from "@remotion/renderer";
 import { WHISPER_CPP_VERSION, WHISPER_MODELS, type WhisperModel } from "../../shared/constants";
 import { EditorError } from "../lib/errors";
-import { assertBinary, ffmpegBin, ffprobeBin } from "../lib/ffmpeg";
+import { assertBinary, ffmpegBin, ffmpegSource, ffprobeBin } from "../lib/ffmpeg";
 import { loadConfig } from "../lib/config";
 import * as log from "../lib/log";
 import {
@@ -67,9 +67,8 @@ export const runSetup = async (options: SetupOptions): Promise<void> => {
   log.step("Checking environment");
   checkNode();
   await assertBinary(ffmpegBin());
-  log.ok(`ffmpeg (${ffmpegBin()})`);
   await assertBinary(ffprobeBin());
-  log.ok(`ffprobe (${ffprobeBin()})`);
+  log.ok(`ffmpeg + ffprobe (${ffmpegSource()}${ffmpegSource() === "bundled" ? " — installed via npm, no brew needed" : ""})`);
   await checkXcodeClt();
 
   log.step("Creating directories");

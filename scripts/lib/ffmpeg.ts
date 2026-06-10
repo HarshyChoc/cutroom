@@ -1,15 +1,69 @@
+import { spawnSync } from "node:child_process";
 import { stat } from "node:fs/promises";
 import { execa } from "execa";
+import ffmpegStatic from "ffmpeg-static";
+import ffprobeStatic from "ffprobe-static";
 import { PROBE_VERSION } from "../../shared/constants";
 import { probeSchema, type Probe } from "../../shared/schemas/probe";
 import { EditorError } from "./errors";
 
-// ffmpeg/ffprobe wrappers. Binaries resolve from PATH with env overrides.
+// ffmpeg/ffprobe wrappers. Binary resolution (cached per process):
+//   1. EDITOR_FFMPEG / EDITOR_FFPROBE env overrides
+//   2. system binaries from PATH (faster, fuller builds when installed)
+//   3. the npm-bundled static binaries (zero-setup fallback — verified to
+//      include zscale/tonemap for the HDR path)
+// System/bundled are picked as a PAIR so probe and transcode never disagree.
 // IMPORTANT: always execa with argument arrays — the repo path contains
 // spaces and nothing here may ever pass through a shell.
 
-export const ffmpegBin = (): string => process.env.EDITOR_FFMPEG ?? "ffmpeg";
-export const ffprobeBin = (): string => process.env.EDITOR_FFPROBE ?? "ffprobe";
+interface ResolvedBins {
+  readonly ffmpeg: string;
+  readonly ffprobe: string;
+  readonly source: "env" | "system" | "bundled";
+}
+
+const runsOk = (bin: string): boolean => {
+  try {
+    return spawnSync(bin, ["-version"], { stdio: "ignore" }).status === 0;
+  } catch {
+    return false;
+  }
+};
+
+let cachedBins: ResolvedBins | null = null;
+
+const resolveBins = (): ResolvedBins => {
+  if (cachedBins) {
+    return cachedBins;
+  }
+  const envFfmpeg = process.env.EDITOR_FFMPEG;
+  const envFfprobe = process.env.EDITOR_FFPROBE;
+  if (envFfmpeg || envFfprobe) {
+    cachedBins = {
+      ffmpeg: envFfmpeg ?? "ffmpeg",
+      ffprobe: envFfprobe ?? "ffprobe",
+      source: "env",
+    };
+  } else if (runsOk("ffmpeg") && runsOk("ffprobe")) {
+    cachedBins = { ffmpeg: "ffmpeg", ffprobe: "ffprobe", source: "system" };
+  } else if (ffmpegStatic && ffprobeStatic.path) {
+    cachedBins = {
+      ffmpeg: ffmpegStatic,
+      ffprobe: ffprobeStatic.path,
+      source: "bundled",
+    };
+  } else {
+    throw new EditorError(
+      "No usable ffmpeg found (system missing and no bundled binary for this platform).",
+      "Install it with: brew install ffmpeg",
+    );
+  }
+  return cachedBins;
+};
+
+export const ffmpegBin = (): string => resolveBins().ffmpeg;
+export const ffprobeBin = (): string => resolveBins().ffprobe;
+export const ffmpegSource = (): string => resolveBins().source;
 
 export const assertBinary = async (bin: string): Promise<void> => {
   try {
@@ -17,7 +71,7 @@ export const assertBinary = async (bin: string): Promise<void> => {
   } catch {
     throw new EditorError(
       `Could not run "${bin}".`,
-      'Install ffmpeg with: brew install ffmpeg — or set EDITOR_FFMPEG/EDITOR_FFPROBE to the binary path.',
+      "The bundled ffmpeg should make this automatic — try `npm install` again, or install system ffmpeg with: brew install ffmpeg",
     );
   }
 };

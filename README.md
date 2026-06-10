@@ -11,14 +11,17 @@ punch-in zooms, title cards, music.
 ## One-time setup (Mac)
 
 ```bash
-# 1. Requirements: Node 20+, ffmpeg, Xcode command line tools
-brew install node ffmpeg
+# 1. Requirements: Node 20+ and Xcode command line tools
+brew install node
 xcode-select --install   # ok if it says already installed
 
-# 2. Install
+# 2. Install (ffmpeg comes bundled automatically — no brew needed for it)
 npm install
 npm run setup            # compiles whisper.cpp, downloads the speech model (~1.5GB) + render browser
 ```
+
+> Optional: `brew install ffmpeg` gives a newer system ffmpeg which the
+> editor will automatically prefer over the bundled one.
 
 Optional: rename `.claude/settings.example.json` → `.claude/settings.json`
 so Claude doesn't ask permission for routine editor commands.
