@@ -5,6 +5,7 @@ import {
   downloadWhisperModel,
   toCaptions,
   transcribe,
+  type Language,
 } from "@remotion/install-whisper-cpp";
 import {
   TRANSCRIPT_VERSION,
@@ -15,6 +16,7 @@ import {
 import {
   transcriptSchema,
   type Transcript,
+  type TranscriptWord,
 } from "../../shared/schemas/transcript";
 import { stampStep } from "../../shared/schemas/status";
 import { loadConfig } from "../lib/config";
@@ -110,7 +112,8 @@ export const transcribeVideo = async (
     whisperCppVersion: WHISPER_CPP_VERSION,
     model,
     tokenLevelTimestamps: true,
-    language: config.whisper.language,
+    // Config validates shape; whisper.cpp errors loudly on unknown codes.
+    language: config.whisper.language as Language,
     printOutput: false,
   });
   await writeFile(
@@ -120,12 +123,32 @@ export const transcribeVideo = async (
   );
 
   const { captions } = toCaptions({ whisperCppOutput: whisperOutput });
-  const words = captions.map((c) => ({
-    text: c.text,
-    startMs: Math.max(0, Math.round(c.startMs)),
-    endMs: Math.max(0, Math.round(c.endMs)),
-    confidence: c.confidence ?? null,
-  }));
+  // Whisper emits BPE tokens: a token starting with " " begins a new word;
+  // anything else ("Cr" + "ickets.") continues the previous one. Merge so
+  // transcript words are real words — karaoke captions depend on this.
+  const words: TranscriptWord[] = [];
+  for (const c of captions) {
+    const prev = words[words.length - 1];
+    const continuesPrev = prev !== undefined && !c.text.startsWith(" ");
+    if (continuesPrev) {
+      words[words.length - 1] = {
+        ...prev,
+        text: prev.text + c.text,
+        endMs: Math.max(prev.endMs, Math.round(c.endMs)),
+        confidence:
+          prev.confidence !== null && c.confidence !== null
+            ? Math.min(prev.confidence, c.confidence)
+            : prev.confidence,
+      };
+    } else {
+      words.push({
+        text: c.text,
+        startMs: Math.max(0, Math.round(c.startMs)),
+        endMs: Math.max(0, Math.round(c.endMs)),
+        confidence: c.confidence ?? null,
+      });
+    }
+  }
 
   const transcript: Transcript = {
     version: TRANSCRIPT_VERSION,

@@ -87,7 +87,7 @@ export const captionStyleSchema = z.object({
 
 export const captionsSchema = z.object({
   enabled: z.boolean().default(true),
-  style: captionStyleSchema.default({}),
+  style: captionStyleSchema.prefault({}),
   /**
    * Built by `editor captions` from the transcript, in OUTPUT time.
    * Hand-fix typos here; re-run `editor captions` after changing segments.
@@ -135,7 +135,7 @@ export const musicSchema = z.object({
       attackMs: ms.default(150),
       releaseMs: ms.default(400),
     })
-    .default({}),
+    .prefault({}),
 });
 
 // ---- root ---------------------------------------------------------------------
@@ -161,9 +161,9 @@ export const editSchema = z.object({
       /** Default horizontal crop-center offset (% of width from center). */
       xPct: pct100.default(0),
     })
-    .default({}),
+    .prefault({}),
   segments: z.array(segmentSchema).min(1),
-  captions: captionsSchema.default({}),
+  captions: captionsSchema.prefault({}),
   overlays: z.array(overlaySchema).default([]),
   music: musicSchema.optional(),
   output: z
@@ -172,7 +172,7 @@ export const editSchema = z.object({
       height: z.number().int().positive().default(1920),
       fps: z.number().int().min(MIN_OUTPUT_FPS).max(MAX_OUTPUT_FPS).default(30),
     })
-    .default({}),
+    .prefault({}),
 });
 
 export type Edit = z.infer<typeof editSchema>;

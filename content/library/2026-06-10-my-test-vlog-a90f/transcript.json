@@ -6,16 +6,10 @@
   "text": "Okay, so here is the thing nobody tells you about making content. Everyone thinks you need fancy gear, but honestly your phone is enough. The real secret is consistency. I posted every single day for three months and the first 60 days, nothing. Crickets. Then one video hit a million views overnight. The algorithm rewards people who show up. So stop waiting for the perfect setup and just hit record.",
   "words": [
     {
-      "text": "Okay",
+      "text": "Okay,",
       "startMs": 80,
-      "endMs": 290,
-      "confidence": 0.678619
-    },
-    {
-      "text": ",",
-      "startMs": 290,
       "endMs": 470,
-      "confidence": 0.835818
+      "confidence": 0.678619
     },
     {
       "text": " so",
@@ -78,14 +72,8 @@
       "confidence": 0.994467
     },
     {
-      "text": " content",
+      "text": " content.",
       "startMs": 3290,
-      "endMs": 3600,
-      "confidence": 0.992012
-    },
-    {
-      "text": ".",
-      "startMs": 3600,
       "endMs": 4160,
       "confidence": 0.874524
     },
@@ -120,14 +108,8 @@
       "confidence": 0.978672
     },
     {
-      "text": " gear",
+      "text": " gear,",
       "startMs": 5700,
-      "endMs": 5940,
-      "confidence": 0.998578
-    },
-    {
-      "text": ",",
-      "startMs": 5940,
       "endMs": 6250,
       "confidence": 0.73096
     },
@@ -162,14 +144,8 @@
       "confidence": 0.996398
     },
     {
-      "text": " enough",
+      "text": " enough.",
       "startMs": 7570,
-      "endMs": 8190,
-      "confidence": 0.995858
-    },
-    {
-      "text": ".",
-      "startMs": 8190,
       "endMs": 8240,
       "confidence": 0.976012
     },
@@ -198,14 +174,8 @@
       "confidence": 0.995262
     },
     {
-      "text": " consistency",
+      "text": " consistency.",
       "startMs": 9790,
-      "endMs": 10580,
-      "confidence": 0.978258
-    },
-    {
-      "text": ".",
-      "startMs": 10580,
       "endMs": 11280,
       "confidence": 0.967128
     },
@@ -282,44 +252,20 @@
       "confidence": 0.852913
     },
     {
-      "text": " days",
+      "text": " days,",
       "startMs": 14890,
-      "endMs": 15380,
-      "confidence": 0.990129
-    },
-    {
-      "text": ",",
-      "startMs": 15380,
       "endMs": 15430,
       "confidence": 0.531792
     },
     {
-      "text": " nothing",
+      "text": " nothing.",
       "startMs": 15430,
-      "endMs": 15930,
+      "endMs": 16240,
       "confidence": 0.563914
     },
     {
-      "text": ".",
-      "startMs": 15930,
-      "endMs": 16240,
-      "confidence": 0.86286
-    },
-    {
-      "text": " Cr",
+      "text": " Crickets.",
       "startMs": 16240,
-      "endMs": 16450,
-      "confidence": 0.954446
-    },
-    {
-      "text": "ickets",
-      "startMs": 16450,
-      "endMs": 17090,
-      "confidence": 0.999329
-    },
-    {
-      "text": ".",
-      "startMs": 17090,
       "endMs": 17440,
       "confidence": 0.853987
     },
@@ -366,14 +312,8 @@
       "confidence": 0.998856
     },
     {
-      "text": " overnight",
+      "text": " overnight.",
       "startMs": 19770,
-      "endMs": 20510,
-      "confidence": 0.987487
-    },
-    {
-      "text": ".",
-      "startMs": 20510,
       "endMs": 20800,
       "confidence": 0.96597
     },
@@ -414,14 +354,8 @@
       "confidence": 0.998654
     },
     {
-      "text": " up",
+      "text": " up.",
       "startMs": 23490,
-      "endMs": 23760,
-      "confidence": 0.99915
-    },
-    {
-      "text": ".",
-      "startMs": 23760,
       "endMs": 23760,
       "confidence": 0.949896
     },
@@ -486,17 +420,11 @@
       "confidence": 0.999115
     },
     {
-      "text": " record",
+      "text": " record.",
       "startMs": 26490,
-      "endMs": 26880,
-      "confidence": 0.953668
-    },
-    {
-      "text": ".",
-      "startMs": 26880,
       "endMs": 27120,
-      "confidence": 0.968594
+      "confidence": 0.953668
     }
   ],
-  "generatedAt": "2026-06-10T16:07:59.514Z"
+  "generatedAt": "2026-06-10T16:19:58.480Z"
 }

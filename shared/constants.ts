@@ -78,3 +78,5 @@ export const MAX_ZOOM_SCALE = 4;
 /** Caption pagination defaults (see shared/caption-build.ts). */
 export const CAPTION_PAGE_GAP_MS = 800;
 export const CAPTION_MAX_PAGE_DURATION_MS = 4_000;
+export const CAPTION_HOLD_MS = 200;
+export const CAPTION_MIN_TOKEN_MS = 60;
