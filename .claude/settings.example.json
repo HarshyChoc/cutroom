@@ -1,0 +1,14 @@
+{
+  "_note": "Rename this file to settings.json to pre-approve the editor's routine commands so Claude never interrupts you with permission prompts for them.",
+  "permissions": {
+    "allow": [
+      "Bash(npm run editor*)",
+      "Bash(npm run setup*)",
+      "Bash(npm run studio*)",
+      "Bash(npm run typecheck*)",
+      "Bash(npx remotion*)",
+      "Bash(ffprobe*)",
+      "Bash(open content/output/*)"
+    ]
+  }
+}
