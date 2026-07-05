@@ -46,6 +46,9 @@ export const CaptionPage: React.FC<{
         {page.tokens.map((token, i) => {
           const active = tMs >= token.fromMs && tMs < token.toMs;
           const spoken = tMs >= token.toMs;
+          if (!active && !spoken) {
+            return null;
+          }
           const popFrames = frame - msToFrames(token.fromMs - page.startMs, fps);
           const pop = active
             ? 1 +

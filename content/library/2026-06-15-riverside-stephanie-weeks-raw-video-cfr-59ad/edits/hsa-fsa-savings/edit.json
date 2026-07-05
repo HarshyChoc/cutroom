@@ -1,0 +1,1567 @@
+{
+  "version": 1,
+  "videoId": "2026-06-15-riverside-stephanie-weeks-raw-video-cfr-59ad",
+  "editName": "hsa-fsa-savings",
+  "title": "HSA FSA savings are real money",
+  "contentType": "talking-head",
+  "source": {
+    "id": "stephanie",
+    "relPath": "library/2026-06-15-riverside-stephanie-weeks-raw-video-cfr-59ad/media/mezzanine.mp4",
+    "durationMs": 3033877,
+    "width": 1920,
+    "height": 1080
+  },
+  "sources": [
+    {
+      "id": "seyvik",
+      "relPath": "library/2026-06-15-riverside-stephanie-weeks-raw-video-cfr-59ad/media/seyvik-mezzanine.mp4",
+      "durationMs": 3033860,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "reframe": {
+    "mode": "crop",
+    "xPct": 0
+  },
+  "segments": [
+    {
+      "id": "seg-01",
+      "sourceId": "stephanie",
+      "sourceInMs": 1493840,
+      "sourceOutMs": 1513180,
+      "speed": 1,
+      "volume": 1,
+      "reframe": {
+        "xPct": -4
+      },
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 1.2,
+            "xPct": 0,
+            "yPct": 0
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Hook: she says using Truemed has been incredible because wellness gets expensive."
+    },
+    {
+      "id": "seg-02",
+      "sourceId": "stephanie",
+      "sourceInMs": 1513180,
+      "sourceOutMs": 1527080,
+      "speed": 1,
+      "volume": 1,
+      "reframe": {
+        "xPct": -4
+      },
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 1.12,
+            "xPct": 0,
+            "yPct": 0
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Employer-funded HSA/FSA money can cover first purchases."
+    },
+    {
+      "id": "seg-03",
+      "sourceId": "stephanie",
+      "sourceInMs": 1527920,
+      "sourceOutMs": 1546800,
+      "speed": 1,
+      "volume": 1,
+      "reframe": {
+        "xPct": -4
+      },
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 1.17,
+            "xPct": 0,
+            "yPct": 0
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Concrete example: about $1,000 of wellness products was effectively covered."
+    },
+    {
+      "id": "seg-04",
+      "sourceId": "stephanie",
+      "sourceInMs": 1547200,
+      "sourceOutMs": 1563860,
+      "speed": 1,
+      "volume": 1,
+      "reframe": {
+        "xPct": -4
+      },
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 1.23,
+            "xPct": 0,
+            "yPct": 0
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Payoff: $30 saved per $100 through pre-tax dollars; ends on big deal."
+    }
+  ],
+  "captions": {
+    "enabled": true,
+    "style": {
+      "preset": "bold-center",
+      "yPct": 70,
+      "maxWordsPerPage": 3,
+      "fontSizePx": 70,
+      "uppercase": true
+    },
+    "pages": [
+      {
+        "startMs": 82,
+        "endMs": 742,
+        "tokens": [
+          {
+            "text": " It's,",
+            "fromMs": 82,
+            "toMs": 222
+          },
+          {
+            "text": " it's",
+            "fromMs": 282,
+            "toMs": 462
+          },
+          {
+            "text": " real-",
+            "fromMs": 482,
+            "toMs": 642
+          }
+        ]
+      },
+      {
+        "startMs": 742,
+        "endMs": 1742,
+        "tokens": [
+          {
+            "text": " really",
+            "fromMs": 742,
+            "toMs": 962
+          },
+          {
+            "text": " been",
+            "fromMs": 982,
+            "toMs": 1082
+          },
+          {
+            "text": " incredible",
+            "fromMs": 1102,
+            "toMs": 1642
+          }
+        ]
+      },
+      {
+        "startMs": 1742,
+        "endMs": 2462,
+        "tokens": [
+          {
+            "text": " because",
+            "fromMs": 1742,
+            "toMs": 2262
+          }
+        ]
+      },
+      {
+        "startMs": 3282,
+        "endMs": 3562,
+        "tokens": [
+          {
+            "text": " I...",
+            "fromMs": 3282,
+            "toMs": 3362
+          }
+        ]
+      },
+      {
+        "startMs": 4522,
+        "endMs": 4991,
+        "tokens": [
+          {
+            "text": " You",
+            "fromMs": 4522,
+            "toMs": 4582
+          },
+          {
+            "text": " know,",
+            "fromMs": 4582,
+            "toMs": 4662
+          },
+          {
+            "text": " things",
+            "fromMs": 4702,
+            "toMs": 4982
+          }
+        ]
+      },
+      {
+        "startMs": 4991,
+        "endMs": 5622,
+        "tokens": [
+          {
+            "text": " get",
+            "fromMs": 4991,
+            "toMs": 5202
+          },
+          {
+            "text": " really,",
+            "fromMs": 5222,
+            "toMs": 5442
+          },
+          {
+            "text": " really",
+            "fromMs": 5462,
+            "toMs": 5602
+          }
+        ]
+      },
+      {
+        "startMs": 5622,
+        "endMs": 7262,
+        "tokens": [
+          {
+            "text": " expensive,",
+            "fromMs": 5622,
+            "toMs": 6182
+          },
+          {
+            "text": " especially",
+            "fromMs": 6222,
+            "toMs": 6902
+          },
+          {
+            "text": " when",
+            "fromMs": 6942,
+            "toMs": 7212
+          }
+        ]
+      },
+      {
+        "startMs": 7262,
+        "endMs": 8522,
+        "tokens": [
+          {
+            "text": " you're",
+            "fromMs": 7262,
+            "toMs": 8032
+          },
+          {
+            "text": " like",
+            "fromMs": 8082,
+            "toMs": 8282
+          },
+          {
+            "text": " me,",
+            "fromMs": 8322,
+            "toMs": 8482
+          }
+        ]
+      },
+      {
+        "startMs": 8522,
+        "endMs": 9511,
+        "tokens": [
+          {
+            "text": " where",
+            "fromMs": 8522,
+            "toMs": 8682
+          },
+          {
+            "text": " you",
+            "fromMs": 8762,
+            "toMs": 8822
+          },
+          {
+            "text": " really,",
+            "fromMs": 8922,
+            "toMs": 9311
+          }
+        ]
+      },
+      {
+        "startMs": 9802,
+        "endMs": 10302,
+        "tokens": [
+          {
+            "text": " you",
+            "fromMs": 9802,
+            "toMs": 9862
+          },
+          {
+            "text": " know,",
+            "fromMs": 9862,
+            "toMs": 9942
+          },
+          {
+            "text": " want",
+            "fromMs": 10082,
+            "toMs": 10262
+          }
+        ]
+      },
+      {
+        "startMs": 10302,
+        "endMs": 10902,
+        "tokens": [
+          {
+            "text": " to",
+            "fromMs": 10302,
+            "toMs": 10402
+          },
+          {
+            "text": " do",
+            "fromMs": 10442,
+            "toMs": 10652
+          },
+          {
+            "text": " all",
+            "fromMs": 10742,
+            "toMs": 10872
+          }
+        ]
+      },
+      {
+        "startMs": 10902,
+        "endMs": 12162,
+        "tokens": [
+          {
+            "text": " the",
+            "fromMs": 10902,
+            "toMs": 11042
+          },
+          {
+            "text": " things,",
+            "fromMs": 11082,
+            "toMs": 11552
+          },
+          {
+            "text": " because",
+            "fromMs": 11762,
+            "toMs": 12002
+          }
+        ]
+      },
+      {
+        "startMs": 12162,
+        "endMs": 12682,
+        "tokens": [
+          {
+            "text": " I",
+            "fromMs": 12162,
+            "toMs": 12222
+          },
+          {
+            "text": " really",
+            "fromMs": 12182,
+            "toMs": 12422
+          },
+          {
+            "text": " wanna",
+            "fromMs": 12462,
+            "toMs": 12642
+          }
+        ]
+      },
+      {
+        "startMs": 12682,
+        "endMs": 13122,
+        "tokens": [
+          {
+            "text": " make",
+            "fromMs": 12682,
+            "toMs": 12842
+          },
+          {
+            "text": " sure",
+            "fromMs": 12862,
+            "toMs": 12962
+          },
+          {
+            "text": " that",
+            "fromMs": 13002,
+            "toMs": 13082
+          }
+        ]
+      },
+      {
+        "startMs": 13122,
+        "endMs": 13642,
+        "tokens": [
+          {
+            "text": " I",
+            "fromMs": 13122,
+            "toMs": 13222
+          },
+          {
+            "text": " stay",
+            "fromMs": 13322,
+            "toMs": 13482
+          },
+          {
+            "text": " in",
+            "fromMs": 13562,
+            "toMs": 13622
+          }
+        ]
+      },
+      {
+        "startMs": 13642,
+        "endMs": 14642,
+        "tokens": [
+          {
+            "text": " the",
+            "fromMs": 13642,
+            "toMs": 13722
+          },
+          {
+            "text": " healthiest",
+            "fromMs": 13732,
+            "toMs": 14171
+          },
+          {
+            "text": " state",
+            "fromMs": 14242,
+            "toMs": 14442
+          }
+        ]
+      },
+      {
+        "startMs": 15022,
+        "endMs": 16602,
+        "tokens": [
+          {
+            "text": " possible.",
+            "fromMs": 15022,
+            "toMs": 16022
+          },
+          {
+            "text": " And",
+            "fromMs": 16032,
+            "toMs": 16192
+          },
+          {
+            "text": " so",
+            "fromMs": 16222,
+            "toMs": 16542
+          }
+        ]
+      },
+      {
+        "startMs": 16602,
+        "endMs": 17482,
+        "tokens": [
+          {
+            "text": " those",
+            "fromMs": 16602,
+            "toMs": 16822
+          },
+          {
+            "text": " things",
+            "fromMs": 16862,
+            "toMs": 17142
+          },
+          {
+            "text": " can",
+            "fromMs": 17202,
+            "toMs": 17412
+          }
+        ]
+      },
+      {
+        "startMs": 17482,
+        "endMs": 18342,
+        "tokens": [
+          {
+            "text": " add",
+            "fromMs": 17482,
+            "toMs": 17602
+          },
+          {
+            "text": " up,",
+            "fromMs": 17662,
+            "toMs": 17752
+          },
+          {
+            "text": " especially",
+            "fromMs": 17782,
+            "toMs": 18311
+          }
+        ]
+      },
+      {
+        "startMs": 18342,
+        "endMs": 19362,
+        "tokens": [
+          {
+            "text": " when",
+            "fromMs": 18342,
+            "toMs": 18462
+          },
+          {
+            "text": " you're",
+            "fromMs": 18502,
+            "toMs": 18772
+          },
+          {
+            "text": " first",
+            "fromMs": 18842,
+            "toMs": 19332
+          }
+        ]
+      },
+      {
+        "startMs": 19362,
+        "endMs": 20782,
+        "tokens": [
+          {
+            "text": " purchasing",
+            "fromMs": 19362,
+            "toMs": 19872
+          },
+          {
+            "text": " the",
+            "fromMs": 19902,
+            "toMs": 19982
+          },
+          {
+            "text": " items.",
+            "fromMs": 20082,
+            "toMs": 20582
+          }
+        ]
+      },
+      {
+        "startMs": 21602,
+        "endMs": 23402,
+        "tokens": [
+          {
+            "text": " And",
+            "fromMs": 21602,
+            "toMs": 22522
+          },
+          {
+            "text": " there's",
+            "fromMs": 22562,
+            "toMs": 22822
+          },
+          {
+            "text": " times",
+            "fromMs": 22862,
+            "toMs": 23362
+          }
+        ]
+      },
+      {
+        "startMs": 23402,
+        "endMs": 25202,
+        "tokens": [
+          {
+            "text": " where",
+            "fromMs": 23402,
+            "toMs": 23592
+          },
+          {
+            "text": " employers",
+            "fromMs": 23622,
+            "toMs": 24942
+          },
+          {
+            "text": " will",
+            "fromMs": 24952,
+            "toMs": 25112
+          }
+        ]
+      },
+      {
+        "startMs": 25202,
+        "endMs": 26362,
+        "tokens": [
+          {
+            "text": " actually",
+            "fromMs": 25202,
+            "toMs": 25542
+          },
+          {
+            "text": " even",
+            "fromMs": 25622,
+            "toMs": 26102
+          },
+          {
+            "text": " put",
+            "fromMs": 26142,
+            "toMs": 26322
+          }
+        ]
+      },
+      {
+        "startMs": 26362,
+        "endMs": 27322,
+        "tokens": [
+          {
+            "text": " money",
+            "fromMs": 26362,
+            "toMs": 26682
+          },
+          {
+            "text": " in",
+            "fromMs": 26782,
+            "toMs": 26892
+          },
+          {
+            "text": " these",
+            "fromMs": 26942,
+            "toMs": 27142
+          }
+        ]
+      },
+      {
+        "startMs": 27322,
+        "endMs": 29982,
+        "tokens": [
+          {
+            "text": " HSA",
+            "fromMs": 27322,
+            "toMs": 27802
+          },
+          {
+            "text": " and",
+            "fromMs": 28482,
+            "toMs": 28652
+          },
+          {
+            "text": " FSAs.",
+            "fromMs": 28822,
+            "toMs": 29922
+          }
+        ]
+      },
+      {
+        "startMs": 29982,
+        "endMs": 30502,
+        "tokens": [
+          {
+            "text": " And",
+            "fromMs": 29982,
+            "toMs": 30112
+          },
+          {
+            "text": " in",
+            "fromMs": 30162,
+            "toMs": 30242
+          },
+          {
+            "text": " my",
+            "fromMs": 30282,
+            "toMs": 30472
+          }
+        ]
+      },
+      {
+        "startMs": 30502,
+        "endMs": 32182,
+        "tokens": [
+          {
+            "text": " situation,",
+            "fromMs": 30502,
+            "toMs": 31811
+          },
+          {
+            "text": " that",
+            "fromMs": 31862,
+            "toMs": 31982
+          },
+          {
+            "text": " had",
+            "fromMs": 32002,
+            "toMs": 32102
+          }
+        ]
+      },
+      {
+        "startMs": 32182,
+        "endMs": 33082,
+        "tokens": [
+          {
+            "text": " actually",
+            "fromMs": 32182,
+            "toMs": 32512
+          },
+          {
+            "text": " happened",
+            "fromMs": 32622,
+            "toMs": 32922
+          },
+          {
+            "text": " at",
+            "fromMs": 32942,
+            "toMs": 33062
+          }
+        ]
+      },
+      {
+        "startMs": 33082,
+        "endMs": 33362,
+        "tokens": [
+          {
+            "text": " the",
+            "fromMs": 33082,
+            "toMs": 33182
+          }
+        ]
+      },
+      {
+        "startMs": 33362,
+        "endMs": 34822,
+        "tokens": [
+          {
+            "text": " And",
+            "fromMs": 33362,
+            "toMs": 33621
+          },
+          {
+            "text": " so",
+            "fromMs": 33742,
+            "toMs": 34162
+          },
+          {
+            "text": " it",
+            "fromMs": 34722,
+            "toMs": 34782
+          }
+        ]
+      },
+      {
+        "startMs": 34822,
+        "endMs": 35982,
+        "tokens": [
+          {
+            "text": " was",
+            "fromMs": 34822,
+            "toMs": 34982
+          },
+          {
+            "text": " great",
+            "fromMs": 35002,
+            "toMs": 35402
+          },
+          {
+            "text": " because",
+            "fromMs": 35462,
+            "toMs": 35922
+          }
+        ]
+      },
+      {
+        "startMs": 35982,
+        "endMs": 36312,
+        "tokens": [
+          {
+            "text": " it",
+            "fromMs": 35982,
+            "toMs": 36042
+          },
+          {
+            "text": " was",
+            "fromMs": 36062,
+            "toMs": 36162
+          },
+          {
+            "text": " like",
+            "fromMs": 36202,
+            "toMs": 36302
+          }
+        ]
+      },
+      {
+        "startMs": 36312,
+        "endMs": 37522,
+        "tokens": [
+          {
+            "text": " $1,000",
+            "fromMs": 36312,
+            "toMs": 37142
+          },
+          {
+            "text": " worth",
+            "fromMs": 37162,
+            "toMs": 37322
+          },
+          {
+            "text": " of",
+            "fromMs": 37342,
+            "toMs": 37422
+          }
+        ]
+      },
+      {
+        "startMs": 37522,
+        "endMs": 38462,
+        "tokens": [
+          {
+            "text": " stuff,",
+            "fromMs": 37522,
+            "toMs": 37982
+          },
+          {
+            "text": " and",
+            "fromMs": 38162,
+            "toMs": 38332
+          },
+          {
+            "text": " it",
+            "fromMs": 38382,
+            "toMs": 38442
+          }
+        ]
+      },
+      {
+        "startMs": 38462,
+        "endMs": 40722,
+        "tokens": [
+          {
+            "text": " was",
+            "fromMs": 38462,
+            "toMs": 38602
+          },
+          {
+            "text": " technically",
+            "fromMs": 38662,
+            "toMs": 39192
+          },
+          {
+            "text": " free",
+            "fromMs": 39342,
+            "toMs": 40602
+          }
+        ]
+      },
+      {
+        "startMs": 40722,
+        "endMs": 41842,
+        "tokens": [
+          {
+            "text": " because",
+            "fromMs": 40722,
+            "toMs": 41502
+          },
+          {
+            "text": " at",
+            "fromMs": 41572,
+            "toMs": 41682
+          },
+          {
+            "text": " the",
+            "fromMs": 41722,
+            "toMs": 41802
+          }
+        ]
+      },
+      {
+        "startMs": 41842,
+        "endMs": 43152,
+        "tokens": [
+          {
+            "text": " time,",
+            "fromMs": 41842,
+            "toMs": 42162
+          },
+          {
+            "text": " the",
+            "fromMs": 42242,
+            "toMs": 42322
+          },
+          {
+            "text": " employer",
+            "fromMs": 42332,
+            "toMs": 42952
+          }
+        ]
+      },
+      {
+        "startMs": 43242,
+        "endMs": 43722,
+        "tokens": [
+          {
+            "text": " put",
+            "fromMs": 43242,
+            "toMs": 43342
+          },
+          {
+            "text": " that",
+            "fromMs": 43402,
+            "toMs": 43522
+          },
+          {
+            "text": " in",
+            "fromMs": 43582,
+            "toMs": 43682
+          }
+        ]
+      },
+      {
+        "startMs": 43722,
+        "endMs": 44622,
+        "tokens": [
+          {
+            "text": " there.",
+            "fromMs": 43722,
+            "toMs": 43922
+          },
+          {
+            "text": " I",
+            "fromMs": 44382,
+            "toMs": 44442
+          },
+          {
+            "text": " mean,",
+            "fromMs": 44442,
+            "toMs": 44542
+          }
+        ]
+      },
+      {
+        "startMs": 44622,
+        "endMs": 45862,
+        "tokens": [
+          {
+            "text": " you",
+            "fromMs": 44622,
+            "toMs": 44682
+          },
+          {
+            "text": " know,",
+            "fromMs": 44702,
+            "toMs": 44792
+          },
+          {
+            "text": " um,",
+            "fromMs": 45402,
+            "toMs": 45662
+          }
+        ]
+      },
+      {
+        "startMs": 46142,
+        "endMs": 47242,
+        "tokens": [
+          {
+            "text": " again,",
+            "fromMs": 46142,
+            "toMs": 46362
+          },
+          {
+            "text": " donate's",
+            "fromMs": 46662,
+            "toMs": 47022
+          },
+          {
+            "text": " not",
+            "fromMs": 47062,
+            "toMs": 47212
+          }
+        ]
+      },
+      {
+        "startMs": 47242,
+        "endMs": 47822,
+        "tokens": [
+          {
+            "text": " the",
+            "fromMs": 47242,
+            "toMs": 47322
+          },
+          {
+            "text": " word,",
+            "fromMs": 47362,
+            "toMs": 47542
+          },
+          {
+            "text": " but",
+            "fromMs": 47622,
+            "toMs": 47792
+          }
+        ]
+      },
+      {
+        "startMs": 47822,
+        "endMs": 48462,
+        "tokens": [
+          {
+            "text": " whatever",
+            "fromMs": 47822,
+            "toMs": 48082
+          },
+          {
+            "text": " the",
+            "fromMs": 48122,
+            "toMs": 48202
+          },
+          {
+            "text": " word",
+            "fromMs": 48222,
+            "toMs": 48402
+          }
+        ]
+      },
+      {
+        "startMs": 48462,
+        "endMs": 49502,
+        "tokens": [
+          {
+            "text": " is,",
+            "fromMs": 48462,
+            "toMs": 48622
+          },
+          {
+            "text": " you",
+            "fromMs": 48842,
+            "toMs": 48902
+          },
+          {
+            "text": " know.",
+            "fromMs": 48922,
+            "toMs": 49422
+          }
+        ]
+      },
+      {
+        "startMs": 49502,
+        "endMs": 50262,
+        "tokens": [
+          {
+            "text": " So",
+            "fromMs": 49502,
+            "toMs": 49922
+          },
+          {
+            "text": " it",
+            "fromMs": 49962,
+            "toMs": 50052
+          },
+          {
+            "text": " was",
+            "fromMs": 50082,
+            "toMs": 50202
+          }
+        ]
+      },
+      {
+        "startMs": 50262,
+        "endMs": 51222,
+        "tokens": [
+          {
+            "text": " even",
+            "fromMs": 50262,
+            "toMs": 50502
+          },
+          {
+            "text": " more.",
+            "fromMs": 50622,
+            "toMs": 50902
+          },
+          {
+            "text": " And",
+            "fromMs": 51042,
+            "toMs": 51162
+          }
+        ]
+      },
+      {
+        "startMs": 51222,
+        "endMs": 51942,
+        "tokens": [
+          {
+            "text": " then",
+            "fromMs": 51222,
+            "toMs": 51742
+          },
+          {
+            "text": " when",
+            "fromMs": 51782,
+            "toMs": 51862
+          },
+          {
+            "text": " I",
+            "fromMs": 51902,
+            "toMs": 51962
+          }
+        ]
+      },
+      {
+        "startMs": 51942,
+        "endMs": 52182,
+        "tokens": [
+          {
+            "text": " was",
+            "fromMs": 51942,
+            "toMs": 52002
+          },
+          {
+            "text": " like,",
+            "fromMs": 52042,
+            "toMs": 52112
+          }
+        ]
+      },
+      {
+        "startMs": 52182,
+        "endMs": 53182,
+        "tokens": [
+          {
+            "text": " I",
+            "fromMs": 52182,
+            "toMs": 52242
+          },
+          {
+            "text": " can,",
+            "fromMs": 52282,
+            "toMs": 52462
+          },
+          {
+            "text": " I",
+            "fromMs": 53102,
+            "toMs": 53162
+          }
+        ]
+      },
+      {
+        "startMs": 53182,
+        "endMs": 54062,
+        "tokens": [
+          {
+            "text": " can",
+            "fromMs": 53182,
+            "toMs": 53262
+          },
+          {
+            "text": " run",
+            "fromMs": 53302,
+            "toMs": 53402
+          },
+          {
+            "text": " supplements",
+            "fromMs": 53542,
+            "toMs": 54022
+          }
+        ]
+      },
+      {
+        "startMs": 54062,
+        "endMs": 54842,
+        "tokens": [
+          {
+            "text": " through",
+            "fromMs": 54062,
+            "toMs": 54202
+          },
+          {
+            "text": " this?\"",
+            "fromMs": 54262,
+            "toMs": 54442
+          },
+          {
+            "text": " Because",
+            "fromMs": 54542,
+            "toMs": 54802
+          }
+        ]
+      },
+      {
+        "startMs": 54842,
+        "endMs": 55622,
+        "tokens": [
+          {
+            "text": " again,",
+            "fromMs": 54842,
+            "toMs": 55022
+          },
+          {
+            "text": " that's",
+            "fromMs": 55122,
+            "toMs": 55252
+          },
+          {
+            "text": " another",
+            "fromMs": 55302,
+            "toMs": 55582
+          }
+        ]
+      },
+      {
+        "startMs": 55622,
+        "endMs": 57302,
+        "tokens": [
+          {
+            "text": " expensive",
+            "fromMs": 55622,
+            "toMs": 56122
+          },
+          {
+            "text": " thing.",
+            "fromMs": 56202,
+            "toMs": 56562
+          },
+          {
+            "text": " And",
+            "fromMs": 57102,
+            "toMs": 57272
+          }
+        ]
+      },
+      {
+        "startMs": 57302,
+        "endMs": 57802,
+        "tokens": [
+          {
+            "text": " if",
+            "fromMs": 57302,
+            "toMs": 57402
+          },
+          {
+            "text": " for",
+            "fromMs": 57422,
+            "toMs": 57542
+          },
+          {
+            "text": " every",
+            "fromMs": 57602,
+            "toMs": 57762
+          }
+        ]
+      },
+      {
+        "startMs": 57802,
+        "endMs": 59082,
+        "tokens": [
+          {
+            "text": " $100",
+            "fromMs": 57802,
+            "toMs": 58402
+          },
+          {
+            "text": " I'm",
+            "fromMs": 58462,
+            "toMs": 58582
+          },
+          {
+            "text": " saving",
+            "fromMs": 58642,
+            "toMs": 58902
+          }
+        ]
+      },
+      {
+        "startMs": 59082,
+        "endMs": 60862,
+        "tokens": [
+          {
+            "text": " potentially",
+            "fromMs": 59082,
+            "toMs": 59642
+          },
+          {
+            "text": " $30",
+            "fromMs": 59652,
+            "toMs": 60422
+          },
+          {
+            "text": " because",
+            "fromMs": 60482,
+            "toMs": 60802
+          }
+        ]
+      },
+      {
+        "startMs": 60862,
+        "endMs": 61482,
+        "tokens": [
+          {
+            "text": " it's,",
+            "fromMs": 60862,
+            "toMs": 61122
+          },
+          {
+            "text": " you",
+            "fromMs": 61142,
+            "toMs": 61202
+          },
+          {
+            "text": " know,",
+            "fromMs": 61222,
+            "toMs": 61282
+          }
+        ]
+      },
+      {
+        "startMs": 61662,
+        "endMs": 63022,
+        "tokens": [
+          {
+            "text": " 30%",
+            "fromMs": 61662,
+            "toMs": 62062
+          },
+          {
+            "text": " tax",
+            "fromMs": 62102,
+            "toMs": 62382
+          },
+          {
+            "text": " bracket,",
+            "fromMs": 62402,
+            "toMs": 62822
+          }
+        ]
+      },
+      {
+        "startMs": 63702,
+        "endMs": 64082,
+        "tokens": [
+          {
+            "text": " you",
+            "fromMs": 63702,
+            "toMs": 63762
+          },
+          {
+            "text": " know,",
+            "fromMs": 63782,
+            "toMs": 63862
+          },
+          {
+            "text": " it's",
+            "fromMs": 63922,
+            "toMs": 64002
+          }
+        ]
+      },
+      {
+        "startMs": 64082,
+        "endMs": 64962,
+        "tokens": [
+          {
+            "text": " pre-tax",
+            "fromMs": 64082,
+            "toMs": 64522
+          },
+          {
+            "text": " dollars",
+            "fromMs": 64562,
+            "toMs": 64852
+          },
+          {
+            "text": " that",
+            "fromMs": 64862,
+            "toMs": 64922
+          }
+        ]
+      },
+      {
+        "startMs": 64962,
+        "endMs": 65382,
+        "tokens": [
+          {
+            "text": " go",
+            "fromMs": 64962,
+            "toMs": 65082
+          },
+          {
+            "text": " in,",
+            "fromMs": 65102,
+            "toMs": 65182
+          },
+          {
+            "text": " in",
+            "fromMs": 65242,
+            "toMs": 65342
+          }
+        ]
+      },
+      {
+        "startMs": 65382,
+        "endMs": 65922,
+        "tokens": [
+          {
+            "text": " there.",
+            "fromMs": 65382,
+            "toMs": 65582
+          },
+          {
+            "text": " I'm",
+            "fromMs": 65642,
+            "toMs": 65722
+          },
+          {
+            "text": " like,",
+            "fromMs": 65782,
+            "toMs": 65882
+          }
+        ]
+      },
+      {
+        "startMs": 65922,
+        "endMs": 66522,
+        "tokens": [
+          {
+            "text": " \"Okay,",
+            "fromMs": 65922,
+            "toMs": 66082
+          },
+          {
+            "text": " this",
+            "fromMs": 66222,
+            "toMs": 66342
+          },
+          {
+            "text": " is",
+            "fromMs": 66402,
+            "toMs": 66482
+          }
+        ]
+      },
+      {
+        "startMs": 66522,
+        "endMs": 67402,
+        "tokens": [
+          {
+            "text": " a",
+            "fromMs": 66522,
+            "toMs": 66582
+          },
+          {
+            "text": " big",
+            "fromMs": 66602,
+            "toMs": 66732
+          },
+          {
+            "text": " deal.",
+            "fromMs": 66842,
+            "toMs": 67262
+          }
+        ]
+      },
+      {
+        "startMs": 67402,
+        "endMs": 67882,
+        "tokens": [
+          {
+            "text": " This",
+            "fromMs": 67402,
+            "toMs": 67502
+          },
+          {
+            "text": " like,",
+            "fromMs": 67542,
+            "toMs": 67642
+          },
+          {
+            "text": " a",
+            "fromMs": 67662,
+            "toMs": 67782
+          }
+        ]
+      },
+      {
+        "startMs": 67882,
+        "endMs": 68902,
+        "tokens": [
+          {
+            "text": " really",
+            "fromMs": 67882,
+            "toMs": 68122
+          },
+          {
+            "text": " big",
+            "fromMs": 68182,
+            "toMs": 68302
+          },
+          {
+            "text": " deal.\"",
+            "fromMs": 68362,
+            "toMs": 68702
+          }
+        ]
+      }
+    ],
+    "builtFromSegmentsHash": "134b5edd"
+  },
+  "overlays": [
+    {
+      "type": "text",
+      "startMs": 0,
+      "endMs": 2300,
+      "text": "THIS IS\nREAL MONEY",
+      "xPct": 50,
+      "yPct": 18,
+      "preset": "hook"
+    },
+    {
+      "type": "image",
+      "startMs": 22600,
+      "endMs": 26700,
+      "src": "assets/broll/truemed-generated-v1/savings-card-coins.png",
+      "fit": "cover",
+      "opacity": 1,
+      "motion": {
+        "fromScale": 1.05,
+        "toScale": 1.13,
+        "fromXPct": 2,
+        "toXPct": -2,
+        "fromYPct": 0,
+        "toYPct": 1
+      }
+    },
+    {
+      "type": "image",
+      "startMs": 46500,
+      "endMs": 51000,
+      "src": "assets/broll/truemed-generated-v1/savings-benefits-desk.png",
+      "fit": "cover",
+      "opacity": 1,
+      "motion": {
+        "fromScale": 1.06,
+        "toScale": 1.15,
+        "fromXPct": -2,
+        "toXPct": 2,
+        "fromYPct": 1,
+        "toYPct": -1
+      }
+    },
+    {
+      "type": "text",
+      "startMs": 59800,
+      "endMs": 63500,
+      "text": "BIG DEAL",
+      "xPct": 50,
+      "yPct": 18,
+      "preset": "callout"
+    }
+  ],
+  "output": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  }
+}

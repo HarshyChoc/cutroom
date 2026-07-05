@@ -10,6 +10,10 @@ export const transcriptWordSchema = z.object({
   startMs: z.number().int().nonnegative(),
   endMs: z.number().int().nonnegative(),
   confidence: z.number().min(0).max(1).nullable(),
+  /** Optional source/speaker metadata from provider diarization or channels. */
+  sourceId: z.string().min(1).optional(),
+  speakerId: z.string().min(1).optional(),
+  channelIndex: z.number().int().nonnegative().optional(),
 });
 export type TranscriptWord = z.infer<typeof transcriptWordSchema>;
 

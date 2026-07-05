@@ -1,0 +1,1517 @@
+{
+  "version": 1,
+  "videoId": "2026-06-15-riverside-stephanie-weeks-raw-video-cfr-59ad",
+  "editName": "story-easy-flow",
+  "title": "How easy Truemed made the product and medical-need flow",
+  "contentType": "talking-head",
+  "source": {
+    "id": "stephanie",
+    "relPath": "library/2026-06-15-riverside-stephanie-weeks-raw-video-cfr-59ad/media/mezzanine.mp4",
+    "durationMs": 3033877,
+    "width": 1920,
+    "height": 1080
+  },
+  "sources": [],
+  "reframe": {
+    "mode": "crop",
+    "xPct": -4
+  },
+  "segments": [
+    {
+      "id": "seg-01",
+      "sourceId": "stephanie",
+      "sourceInMs": 1588282,
+      "sourceOutMs": 1601802,
+      "speed": 1,
+      "volume": 1,
+      "reframe": {
+        "xPct": -4
+      },
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 1.24,
+            "xPct": 0,
+            "yPct": 0
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Cold open: Truemed made it easy and showed products she wanted."
+    },
+    {
+      "id": "seg-02",
+      "sourceId": "stephanie",
+      "sourceInMs": 1603422,
+      "sourceOutMs": 1611382,
+      "speed": 1,
+      "volume": 1,
+      "reframe": {
+        "xPct": -4
+      },
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 1.18,
+            "xPct": 0,
+            "yPct": 0
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Shows the browsing use case: find products you want to use, buy, or consume."
+    },
+    {
+      "id": "seg-03",
+      "sourceId": "stephanie",
+      "sourceInMs": 1611782,
+      "sourceOutMs": 1620622,
+      "speed": 1,
+      "volume": 1,
+      "reframe": {
+        "xPct": -4
+      },
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 1.14,
+            "xPct": 0,
+            "yPct": 0
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Simple flow: press a few buttons and answer medical-need questions."
+    },
+    {
+      "id": "seg-04",
+      "sourceId": "stephanie",
+      "sourceInMs": 1621502,
+      "sourceOutMs": 1627551,
+      "speed": 1,
+      "volume": 1,
+      "reframe": {
+        "xPct": -4
+      },
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 1.2,
+            "xPct": 0,
+            "yPct": 0
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Doctors write the letter of medical necessity."
+    },
+    {
+      "id": "seg-05",
+      "sourceId": "stephanie",
+      "sourceInMs": 1629102,
+      "sourceOutMs": 1634942,
+      "speed": 1,
+      "volume": 1,
+      "reframe": {
+        "xPct": -4
+      },
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 1.12,
+            "xPct": 0,
+            "yPct": 0
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "The letter can help insurance cover workout gear.."
+    },
+    {
+      "id": "seg-06",
+      "sourceId": "stephanie",
+      "sourceInMs": 1686182,
+      "sourceOutMs": 1702921,
+      "speed": 1,
+      "volume": 1,
+      "reframe": {
+        "xPct": -4
+      },
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 1.18,
+            "xPct": 0,
+            "yPct": 0
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Why that mattered: before Truemed, FSA/HSA felt difficult."
+    },
+    {
+      "id": "seg-07",
+      "sourceId": "stephanie",
+      "sourceInMs": 1730062,
+      "sourceOutMs": 1735122,
+      "speed": 1,
+      "volume": 1,
+      "reframe": {
+        "xPct": -4
+      },
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 1.24,
+            "xPct": 0,
+            "yPct": 0
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Strong ending: Truemed was a lifesaver."
+    }
+  ],
+  "captions": {
+    "enabled": true,
+    "style": {
+      "preset": "bold-center",
+      "yPct": 70,
+      "maxWordsPerPage": 3,
+      "fontSizePx": 70,
+      "uppercase": true
+    },
+    "pages": [
+      {
+        "startMs": 0,
+        "endMs": 860,
+        "tokens": [
+          {
+            "text": " It",
+            "fromMs": 0,
+            "toMs": 60
+          },
+          {
+            "text": " was",
+            "fromMs": 120,
+            "toMs": 400
+          },
+          {
+            "text": " so",
+            "fromMs": 460,
+            "toMs": 780
+          }
+        ]
+      },
+      {
+        "startMs": 860,
+        "endMs": 1840,
+        "tokens": [
+          {
+            "text": " easy,",
+            "fromMs": 860,
+            "toMs": 1300
+          },
+          {
+            "text": " and",
+            "fromMs": 1360,
+            "toMs": 1440
+          },
+          {
+            "text": " I",
+            "fromMs": 1600,
+            "toMs": 1660
+          }
+        ]
+      },
+      {
+        "startMs": 1840,
+        "endMs": 4560,
+        "tokens": [
+          {
+            "text": " love",
+            "fromMs": 1840,
+            "toMs": 2460
+          },
+          {
+            "text": " that",
+            "fromMs": 2520,
+            "toMs": 3800
+          },
+          {
+            "text": " Truemed",
+            "fromMs": 3880,
+            "toMs": 4360
+          }
+        ]
+      },
+      {
+        "startMs": 4819,
+        "endMs": 5660,
+        "tokens": [
+          {
+            "text": " shows",
+            "fromMs": 4819,
+            "toMs": 5240
+          },
+          {
+            "text": " all",
+            "fromMs": 5319,
+            "toMs": 5470
+          },
+          {
+            "text": " the",
+            "fromMs": 5479,
+            "toMs": 5640
+          }
+        ]
+      },
+      {
+        "startMs": 5660,
+        "endMs": 6479,
+        "tokens": [
+          {
+            "text": " items",
+            "fromMs": 5660,
+            "toMs": 6120
+          },
+          {
+            "text": " that",
+            "fromMs": 6160,
+            "toMs": 6300
+          },
+          {
+            "text": " you",
+            "fromMs": 6340,
+            "toMs": 6440
+          }
+        ]
+      },
+      {
+        "startMs": 6479,
+        "endMs": 7920,
+        "tokens": [
+          {
+            "text": " can",
+            "fromMs": 6479,
+            "toMs": 6630
+          },
+          {
+            "text": " get",
+            "fromMs": 6660,
+            "toMs": 6900
+          },
+          {
+            "text": " because",
+            "fromMs": 6920,
+            "toMs": 7889
+          }
+        ]
+      },
+      {
+        "startMs": 7920,
+        "endMs": 8460,
+        "tokens": [
+          {
+            "text": " there",
+            "fromMs": 7920,
+            "toMs": 8020
+          },
+          {
+            "text": " are",
+            "fromMs": 8040,
+            "toMs": 8120
+          },
+          {
+            "text": " so",
+            "fromMs": 8280,
+            "toMs": 8400
+          }
+        ]
+      },
+      {
+        "startMs": 8460,
+        "endMs": 9320,
+        "tokens": [
+          {
+            "text": " many",
+            "fromMs": 8460,
+            "toMs": 8640
+          },
+          {
+            "text": " items",
+            "fromMs": 8820,
+            "toMs": 9160
+          },
+          {
+            "text": " that",
+            "fromMs": 9200,
+            "toMs": 9300
+          }
+        ]
+      },
+      {
+        "startMs": 9320,
+        "endMs": 9880,
+        "tokens": [
+          {
+            "text": " are",
+            "fromMs": 9320,
+            "toMs": 9400
+          },
+          {
+            "text": " on",
+            "fromMs": 9500,
+            "toMs": 9620
+          },
+          {
+            "text": " my",
+            "fromMs": 9660,
+            "toMs": 9780
+          }
+        ]
+      },
+      {
+        "startMs": 9880,
+        "endMs": 11440,
+        "tokens": [
+          {
+            "text": " wishlist,",
+            "fromMs": 9880,
+            "toMs": 10560
+          },
+          {
+            "text": " and",
+            "fromMs": 11060,
+            "toMs": 11160
+          },
+          {
+            "text": " I",
+            "fromMs": 11260,
+            "toMs": 11360
+          }
+        ]
+      },
+      {
+        "startMs": 11440,
+        "endMs": 12440,
+        "tokens": [
+          {
+            "text": " found",
+            "fromMs": 11440,
+            "toMs": 11720
+          },
+          {
+            "text": " them",
+            "fromMs": 11760,
+            "toMs": 11940
+          },
+          {
+            "text": " through",
+            "fromMs": 12060,
+            "toMs": 12400
+          }
+        ]
+      },
+      {
+        "startMs": 12440,
+        "endMs": 13520,
+        "tokens": [
+          {
+            "text": " the",
+            "fromMs": 12440,
+            "toMs": 12520
+          },
+          {
+            "text": " Truemed",
+            "fromMs": 12540,
+            "toMs": 12900
+          },
+          {
+            "text": " website.",
+            "fromMs": 12980,
+            "toMs": 13519
+          }
+        ]
+      },
+      {
+        "startMs": 13520,
+        "endMs": 14420,
+        "tokens": [
+          {
+            "text": " And",
+            "fromMs": 13520,
+            "toMs": 13630
+          },
+          {
+            "text": " so,",
+            "fromMs": 13740,
+            "toMs": 13920
+          },
+          {
+            "text": " you",
+            "fromMs": 14380,
+            "toMs": 14440
+          }
+        ]
+      },
+      {
+        "startMs": 14420,
+        "endMs": 14880,
+        "tokens": [
+          {
+            "text": " know,",
+            "fromMs": 14420,
+            "toMs": 14480
+          },
+          {
+            "text": " you're",
+            "fromMs": 14500,
+            "toMs": 14600
+          },
+          {
+            "text": " able",
+            "fromMs": 14660,
+            "toMs": 14820
+          }
+        ]
+      },
+      {
+        "startMs": 14880,
+        "endMs": 15320,
+        "tokens": [
+          {
+            "text": " to",
+            "fromMs": 14880,
+            "toMs": 14960
+          },
+          {
+            "text": " go",
+            "fromMs": 15000,
+            "toMs": 15120
+          },
+          {
+            "text": " on",
+            "fromMs": 15180,
+            "toMs": 15280
+          }
+        ]
+      },
+      {
+        "startMs": 15320,
+        "endMs": 15649,
+        "tokens": [
+          {
+            "text": " there,",
+            "fromMs": 15320,
+            "toMs": 15460
+          },
+          {
+            "text": " and",
+            "fromMs": 15489,
+            "toMs": 15550
+          },
+          {
+            "text": " you're",
+            "fromMs": 15580,
+            "toMs": 15649
+          }
+        ]
+      },
+      {
+        "startMs": 15649,
+        "endMs": 16900,
+        "tokens": [
+          {
+            "text": " able",
+            "fromMs": 15649,
+            "toMs": 15810
+          },
+          {
+            "text": " to",
+            "fromMs": 15820,
+            "toMs": 16180
+          },
+          {
+            "text": " find",
+            "fromMs": 16260,
+            "toMs": 16760
+          }
+        ]
+      },
+      {
+        "startMs": 16900,
+        "endMs": 18020,
+        "tokens": [
+          {
+            "text": " the",
+            "fromMs": 16900,
+            "toMs": 17060
+          },
+          {
+            "text": " potential",
+            "fromMs": 17080,
+            "toMs": 17520
+          },
+          {
+            "text": " products",
+            "fromMs": 17600,
+            "toMs": 17980
+          }
+        ]
+      },
+      {
+        "startMs": 18020,
+        "endMs": 18580,
+        "tokens": [
+          {
+            "text": " that",
+            "fromMs": 18020,
+            "toMs": 18140
+          },
+          {
+            "text": " you",
+            "fromMs": 18180,
+            "toMs": 18240
+          },
+          {
+            "text": " want",
+            "fromMs": 18300,
+            "toMs": 18540
+          }
+        ]
+      },
+      {
+        "startMs": 18580,
+        "endMs": 19500,
+        "tokens": [
+          {
+            "text": " to",
+            "fromMs": 18580,
+            "toMs": 18680
+          },
+          {
+            "text": " use,",
+            "fromMs": 18860,
+            "toMs": 19100
+          },
+          {
+            "text": " buy,",
+            "fromMs": 19200,
+            "toMs": 19420
+          }
+        ]
+      },
+      {
+        "startMs": 19500,
+        "endMs": 20420,
+        "tokens": [
+          {
+            "text": " consume,",
+            "fromMs": 19500,
+            "toMs": 19920
+          },
+          {
+            "text": " whatever",
+            "fromMs": 19960,
+            "toMs": 20220
+          },
+          {
+            "text": " the",
+            "fromMs": 20300,
+            "toMs": 20380
+          }
+        ]
+      },
+      {
+        "startMs": 20420,
+        "endMs": 21480,
+        "tokens": [
+          {
+            "text": " situation",
+            "fromMs": 20420,
+            "toMs": 21000
+          },
+          {
+            "text": " might",
+            "fromMs": 21040,
+            "toMs": 21260
+          },
+          {
+            "text": " be.",
+            "fromMs": 21300,
+            "toMs": 21479
+          }
+        ]
+      },
+      {
+        "startMs": 21480,
+        "endMs": 22000,
+        "tokens": [
+          {
+            "text": " And",
+            "fromMs": 21480,
+            "toMs": 21600
+          },
+          {
+            "text": " then",
+            "fromMs": 21640,
+            "toMs": 21800
+          },
+          {
+            "text": " you're",
+            "fromMs": 21820,
+            "toMs": 21940
+          }
+        ]
+      },
+      {
+        "startMs": 22000,
+        "endMs": 23220,
+        "tokens": [
+          {
+            "text": " able",
+            "fromMs": 22000,
+            "toMs": 22260
+          },
+          {
+            "text": " to,",
+            "fromMs": 22340,
+            "toMs": 23100
+          },
+          {
+            "text": " you",
+            "fromMs": 23140,
+            "toMs": 23200
+          }
+        ]
+      },
+      {
+        "startMs": 23220,
+        "endMs": 23920,
+        "tokens": [
+          {
+            "text": " know,",
+            "fromMs": 23220,
+            "toMs": 23280
+          },
+          {
+            "text": " pretty",
+            "fromMs": 23440,
+            "toMs": 23630
+          },
+          {
+            "text": " much",
+            "fromMs": 23700,
+            "toMs": 23880
+          }
+        ]
+      },
+      {
+        "startMs": 23920,
+        "endMs": 24460,
+        "tokens": [
+          {
+            "text": " just",
+            "fromMs": 23920,
+            "toMs": 24100
+          },
+          {
+            "text": " press",
+            "fromMs": 24120,
+            "toMs": 24320
+          },
+          {
+            "text": " a",
+            "fromMs": 24340,
+            "toMs": 24420
+          }
+        ]
+      },
+      {
+        "startMs": 24460,
+        "endMs": 25380,
+        "tokens": [
+          {
+            "text": " few",
+            "fromMs": 24460,
+            "toMs": 24640
+          },
+          {
+            "text": " buttons",
+            "fromMs": 24660,
+            "toMs": 25140
+          },
+          {
+            "text": " and",
+            "fromMs": 25240,
+            "toMs": 25340
+          }
+        ]
+      },
+      {
+        "startMs": 25380,
+        "endMs": 26140,
+        "tokens": [
+          {
+            "text": " then",
+            "fromMs": 25380,
+            "toMs": 25620
+          },
+          {
+            "text": " answer",
+            "fromMs": 25640,
+            "toMs": 25920
+          },
+          {
+            "text": " a",
+            "fromMs": 26000,
+            "toMs": 26100
+          }
+        ]
+      },
+      {
+        "startMs": 26140,
+        "endMs": 27020,
+        "tokens": [
+          {
+            "text": " bunch",
+            "fromMs": 26140,
+            "toMs": 26360
+          },
+          {
+            "text": " of",
+            "fromMs": 26400,
+            "toMs": 26480
+          },
+          {
+            "text": " questions",
+            "fromMs": 26520,
+            "toMs": 26960
+          }
+        ]
+      },
+      {
+        "startMs": 27020,
+        "endMs": 27440,
+        "tokens": [
+          {
+            "text": " so",
+            "fromMs": 27020,
+            "toMs": 27120
+          },
+          {
+            "text": " that",
+            "fromMs": 27160,
+            "toMs": 27280
+          },
+          {
+            "text": " the",
+            "fromMs": 27320,
+            "toMs": 27400
+          }
+        ]
+      },
+      {
+        "startMs": 27440,
+        "endMs": 28220,
+        "tokens": [
+          {
+            "text": " doctors",
+            "fromMs": 27440,
+            "toMs": 27840
+          },
+          {
+            "text": " can",
+            "fromMs": 27860,
+            "toMs": 27960
+          },
+          {
+            "text": " make",
+            "fromMs": 28020,
+            "toMs": 28180
+          }
+        ]
+      },
+      {
+        "startMs": 28220,
+        "endMs": 29020,
+        "tokens": [
+          {
+            "text": " sure",
+            "fromMs": 28220,
+            "toMs": 28360
+          },
+          {
+            "text": " there",
+            "fromMs": 28520,
+            "toMs": 28720
+          },
+          {
+            "text": " is",
+            "fromMs": 28800,
+            "toMs": 28960
+          }
+        ]
+      },
+      {
+        "startMs": 29020,
+        "endMs": 29880,
+        "tokens": [
+          {
+            "text": " a",
+            "fromMs": 29020,
+            "toMs": 29080
+          },
+          {
+            "text": " medical",
+            "fromMs": 29120,
+            "toMs": 29500
+          },
+          {
+            "text": " need",
+            "fromMs": 29600,
+            "toMs": 29820
+          }
+        ]
+      },
+      {
+        "startMs": 29880,
+        "endMs": 30320,
+        "tokens": [
+          {
+            "text": " for",
+            "fromMs": 29880,
+            "toMs": 30060
+          },
+          {
+            "text": " it.",
+            "fromMs": 30120,
+            "toMs": 30319
+          }
+        ]
+      },
+      {
+        "startMs": 30320,
+        "endMs": 30760,
+        "tokens": [
+          {
+            "text": " and",
+            "fromMs": 30320,
+            "toMs": 30440
+          },
+          {
+            "text": " then",
+            "fromMs": 30480,
+            "toMs": 30580
+          },
+          {
+            "text": " they",
+            "fromMs": 30620,
+            "toMs": 30740
+          }
+        ]
+      },
+      {
+        "startMs": 30760,
+        "endMs": 31300,
+        "tokens": [
+          {
+            "text": " write",
+            "fromMs": 30760,
+            "toMs": 30940
+          },
+          {
+            "text": " the",
+            "fromMs": 30980,
+            "toMs": 31060
+          },
+          {
+            "text": " letter",
+            "fromMs": 31120,
+            "toMs": 31280
+          }
+        ]
+      },
+      {
+        "startMs": 31300,
+        "endMs": 32420,
+        "tokens": [
+          {
+            "text": " of",
+            "fromMs": 31300,
+            "toMs": 31369
+          },
+          {
+            "text": " medical",
+            "fromMs": 31420,
+            "toMs": 31720
+          },
+          {
+            "text": " necessity,",
+            "fromMs": 31760,
+            "toMs": 32320
+          }
+        ]
+      },
+      {
+        "startMs": 32420,
+        "endMs": 32980,
+        "tokens": [
+          {
+            "text": " which",
+            "fromMs": 32420,
+            "toMs": 32520
+          },
+          {
+            "text": " is",
+            "fromMs": 32560,
+            "toMs": 32700
+          },
+          {
+            "text": " pretty",
+            "fromMs": 32740,
+            "toMs": 32940
+          }
+        ]
+      },
+      {
+        "startMs": 32980,
+        "endMs": 33920,
+        "tokens": [
+          {
+            "text": " much",
+            "fromMs": 32980,
+            "toMs": 33180
+          },
+          {
+            "text": " the",
+            "fromMs": 33190,
+            "toMs": 33480
+          },
+          {
+            "text": " only",
+            "fromMs": 33580,
+            "toMs": 33880
+          }
+        ]
+      },
+      {
+        "startMs": 33920,
+        "endMs": 34680,
+        "tokens": [
+          {
+            "text": " way",
+            "fromMs": 33920,
+            "toMs": 34120
+          },
+          {
+            "text": " I",
+            "fromMs": 34300,
+            "toMs": 34360
+          },
+          {
+            "text": " ever",
+            "fromMs": 34380,
+            "toMs": 34620
+          }
+        ]
+      },
+      {
+        "startMs": 34680,
+        "endMs": 35520,
+        "tokens": [
+          {
+            "text": " found,",
+            "fromMs": 34680,
+            "toMs": 35100
+          },
+          {
+            "text": " and",
+            "fromMs": 35180,
+            "toMs": 35270
+          },
+          {
+            "text": " I'm",
+            "fromMs": 35320,
+            "toMs": 35480
+          }
+        ]
+      },
+      {
+        "startMs": 35520,
+        "endMs": 36369,
+        "tokens": [
+          {
+            "text": " pretty",
+            "fromMs": 35520,
+            "toMs": 35760
+          },
+          {
+            "text": " crafty,",
+            "fromMs": 35800,
+            "toMs": 36368
+          }
+        ]
+      },
+      {
+        "startMs": 36369,
+        "endMs": 36789,
+        "tokens": [
+          {
+            "text": " to",
+            "fromMs": 36369,
+            "toMs": 36469
+          },
+          {
+            "text": " get",
+            "fromMs": 36509,
+            "toMs": 36639
+          },
+          {
+            "text": " the",
+            "fromMs": 36689,
+            "toMs": 36749
+          }
+        ]
+      },
+      {
+        "startMs": 36789,
+        "endMs": 38798,
+        "tokens": [
+          {
+            "text": " insurance",
+            "fromMs": 36789,
+            "toMs": 37489
+          },
+          {
+            "text": " to",
+            "fromMs": 37549,
+            "toMs": 38089
+          },
+          {
+            "text": " cover",
+            "fromMs": 38149,
+            "toMs": 38598
+          }
+        ]
+      },
+      {
+        "startMs": 39109,
+        "endMs": 41829,
+        "tokens": [
+          {
+            "text": " things",
+            "fromMs": 39109,
+            "toMs": 39619
+          },
+          {
+            "text": " like",
+            "fromMs": 39829,
+            "toMs": 41249
+          },
+          {
+            "text": " workout",
+            "fromMs": 41309,
+            "toMs": 41789
+          }
+        ]
+      },
+      {
+        "startMs": 41829,
+        "endMs": 42209,
+        "tokens": [
+          {
+            "text": " gear,",
+            "fromMs": 41829,
+            "toMs": 42208
+          }
+        ]
+      },
+      {
+        "startMs": 42209,
+        "endMs": 43989,
+        "tokens": [
+          {
+            "text": " I",
+            "fromMs": 42209,
+            "toMs": 42369
+          },
+          {
+            "text": " had",
+            "fromMs": 42449,
+            "toMs": 42809
+          },
+          {
+            "text": " FSA",
+            "fromMs": 43329,
+            "toMs": 43889
+          }
+        ]
+      },
+      {
+        "startMs": 43989,
+        "endMs": 45709,
+        "tokens": [
+          {
+            "text": " and/or",
+            "fromMs": 43989,
+            "toMs": 44329
+          },
+          {
+            "text": " HSA",
+            "fromMs": 44489,
+            "toMs": 44909
+          },
+          {
+            "text": " accounts",
+            "fromMs": 44969,
+            "toMs": 45569
+          }
+        ]
+      },
+      {
+        "startMs": 45709,
+        "endMs": 46649,
+        "tokens": [
+          {
+            "text": " for",
+            "fromMs": 45709,
+            "toMs": 46149
+          },
+          {
+            "text": " a",
+            "fromMs": 46189,
+            "toMs": 46249
+          },
+          {
+            "text": " few",
+            "fromMs": 46369,
+            "toMs": 46549
+          }
+        ]
+      },
+      {
+        "startMs": 46649,
+        "endMs": 48869,
+        "tokens": [
+          {
+            "text": " years",
+            "fromMs": 46649,
+            "toMs": 47149
+          },
+          {
+            "text": " sporadically.",
+            "fromMs": 47229,
+            "toMs": 48049
+          },
+          {
+            "text": " And",
+            "fromMs": 48709,
+            "toMs": 48809
+          }
+        ]
+      },
+      {
+        "startMs": 48869,
+        "endMs": 49409,
+        "tokens": [
+          {
+            "text": " if",
+            "fromMs": 48869,
+            "toMs": 48969
+          },
+          {
+            "text": " I'm",
+            "fromMs": 49029,
+            "toMs": 49129
+          },
+          {
+            "text": " being",
+            "fromMs": 49169,
+            "toMs": 49389
+          }
+        ]
+      },
+      {
+        "startMs": 49409,
+        "endMs": 50169,
+        "tokens": [
+          {
+            "text": " honest",
+            "fromMs": 49409,
+            "toMs": 49689
+          },
+          {
+            "text": " with",
+            "fromMs": 49769,
+            "toMs": 49909
+          },
+          {
+            "text": " you,",
+            "fromMs": 49989,
+            "toMs": 50069
+          }
+        ]
+      },
+      {
+        "startMs": 50169,
+        "endMs": 51009,
+        "tokens": [
+          {
+            "text": " I",
+            "fromMs": 50169,
+            "toMs": 50229
+          },
+          {
+            "text": " had",
+            "fromMs": 50249,
+            "toMs": 50489
+          },
+          {
+            "text": " more",
+            "fromMs": 50589,
+            "toMs": 50829
+          }
+        ]
+      },
+      {
+        "startMs": 51009,
+        "endMs": 51689,
+        "tokens": [
+          {
+            "text": " FSA",
+            "fromMs": 51009,
+            "toMs": 51409
+          },
+          {
+            "text": " than",
+            "fromMs": 51469,
+            "toMs": 51569
+          },
+          {
+            "text": " I",
+            "fromMs": 51629,
+            "toMs": 51689
+          }
+        ]
+      },
+      {
+        "startMs": 51689,
+        "endMs": 53389,
+        "tokens": [
+          {
+            "text": " had",
+            "fromMs": 51689,
+            "toMs": 51858
+          },
+          {
+            "text": " HSA,",
+            "fromMs": 52029,
+            "toMs": 52549
+          },
+          {
+            "text": " and",
+            "fromMs": 53129,
+            "toMs": 53209
+          }
+        ]
+      },
+      {
+        "startMs": 53389,
+        "endMs": 54129,
+        "tokens": [
+          {
+            "text": " I",
+            "fromMs": 53389,
+            "toMs": 53469
+          },
+          {
+            "text": " found",
+            "fromMs": 53569,
+            "toMs": 53809
+          },
+          {
+            "text": " them",
+            "fromMs": 53869,
+            "toMs": 54069
+          }
+        ]
+      },
+      {
+        "startMs": 54129,
+        "endMs": 54929,
+        "tokens": [
+          {
+            "text": " to",
+            "fromMs": 54129,
+            "toMs": 54189
+          },
+          {
+            "text": " be...",
+            "fromMs": 54269,
+            "toMs": 54489
+          },
+          {
+            "text": " Until",
+            "fromMs": 54529,
+            "toMs": 54849
+          }
+        ]
+      },
+      {
+        "startMs": 54929,
+        "endMs": 56089,
+        "tokens": [
+          {
+            "text": " I",
+            "fromMs": 54929,
+            "toMs": 55009
+          },
+          {
+            "text": " found",
+            "fromMs": 55109,
+            "toMs": 55309
+          },
+          {
+            "text": " Truemed,",
+            "fromMs": 55389,
+            "toMs": 55889
+          }
+        ]
+      },
+      {
+        "startMs": 56129,
+        "endMs": 56869,
+        "tokens": [
+          {
+            "text": " I",
+            "fromMs": 56129,
+            "toMs": 56249
+          },
+          {
+            "text": " found",
+            "fromMs": 56329,
+            "toMs": 56569
+          },
+          {
+            "text": " them",
+            "fromMs": 56609,
+            "toMs": 56769
+          }
+        ]
+      },
+      {
+        "startMs": 56869,
+        "endMs": 58289,
+        "tokens": [
+          {
+            "text": " to",
+            "fromMs": 56869,
+            "toMs": 56929
+          },
+          {
+            "text": " be",
+            "fromMs": 56989,
+            "toMs": 57159
+          },
+          {
+            "text": " so",
+            "fromMs": 57909,
+            "toMs": 58229
+          }
+        ]
+      },
+      {
+        "startMs": 58289,
+        "endMs": 58948,
+        "tokens": [
+          {
+            "text": " difficult.",
+            "fromMs": 58289,
+            "toMs": 58947
+          }
+        ]
+      },
+      {
+        "startMs": 58948,
+        "endMs": 60048,
+        "tokens": [
+          {
+            "text": " So,",
+            "fromMs": 58948,
+            "toMs": 59268
+          },
+          {
+            "text": " uh,",
+            "fromMs": 59368,
+            "toMs": 59428
+          },
+          {
+            "text": " Truemed",
+            "fromMs": 59588,
+            "toMs": 59988
+          }
+        ]
+      },
+      {
+        "startMs": 60048,
+        "endMs": 60928,
+        "tokens": [
+          {
+            "text": " just",
+            "fromMs": 60048,
+            "toMs": 60368
+          },
+          {
+            "text": " really",
+            "fromMs": 60408,
+            "toMs": 60708
+          },
+          {
+            "text": " was",
+            "fromMs": 60768,
+            "toMs": 60868
+          }
+        ]
+      },
+      {
+        "startMs": 60928,
+        "endMs": 64207,
+        "tokens": [
+          {
+            "text": " a",
+            "fromMs": 60928,
+            "toMs": 60988
+          },
+          {
+            "text": " lifesaver.",
+            "fromMs": 61108,
+            "toMs": 64007
+          }
+        ]
+      }
+    ],
+    "builtFromSegmentsHash": "1c750fbc"
+  },
+  "overlays": [],
+  "output": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  }
+}

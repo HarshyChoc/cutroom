@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "videoId": "2026-06-15-riverside-stephanie-weeks-raw-video-cfr-59ad",
+  "frames": [
+    {
+      "file": "frame-001.jpg",
+      "tMs": 126411
+    },
+    {
+      "file": "frame-002.jpg",
+      "tMs": 379234
+    },
+    {
+      "file": "frame-003.jpg",
+      "tMs": 632057
+    },
+    {
+      "file": "frame-004.jpg",
+      "tMs": 884880
+    },
+    {
+      "file": "frame-005.jpg",
+      "tMs": 1137703
+    },
+    {
+      "file": "frame-006.jpg",
+      "tMs": 1390526
+    },
+    {
+      "file": "frame-007.jpg",
+      "tMs": 1643349
+    },
+    {
+      "file": "frame-008.jpg",
+      "tMs": 1896172
+    },
+    {
+      "file": "frame-009.jpg",
+      "tMs": 2148995
+    },
+    {
+      "file": "frame-010.jpg",
+      "tMs": 2401818
+    },
+    {
+      "file": "frame-011.jpg",
+      "tMs": 2654641
+    },
+    {
+      "file": "frame-012.jpg",
+      "tMs": 2907464
+    }
+  ],
+  "generatedAt": "2026-06-15T10:02:42.744Z"
+}

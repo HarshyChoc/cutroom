@@ -1,4 +1,4 @@
-import type { Edit, Segment } from "./schemas/edit";
+import type { Edit, EditSource, Segment } from "./schemas/edit";
 
 // Pure functions over an Edit. Used by the validator, the caption builder,
 // AND the Remotion composition (calculateMetadata + timeline layout), so the
@@ -9,6 +9,20 @@ export const segmentOutputDurationMs = (segment: Segment): number =>
 
 export const outputDurationMs = (edit: Edit): number =>
   edit.segments.reduce((sum, seg) => sum + segmentOutputDurationMs(seg), 0);
+
+export const sourceIdForSegment = (edit: Edit, segment: Segment): string | null =>
+  segment.sourceId ?? edit.source.id ?? null;
+
+export const sourceForSegment = (
+  edit: Edit,
+  segment: Segment,
+): EditSource | null => {
+  const sourceId = sourceIdForSegment(edit, segment);
+  if (sourceId === null || sourceId === "primary" || sourceId === edit.source.id) {
+    return edit.source;
+  }
+  return edit.sources.find((source) => source.id === sourceId) ?? null;
+};
 
 export interface TimelineEntry {
   readonly segment: Segment;
@@ -35,9 +49,18 @@ export const segmentTimeline = (edit: Edit): readonly TimelineEntry[] => {
 export const sourceToOutputMs = (
   edit: Edit,
   sourceMs: number,
+  sourceId?: string,
 ): number | null => {
   for (const entry of segmentTimeline(edit)) {
     const { segment } = entry;
+    const segmentSourceId = sourceIdForSegment(edit, segment);
+    if (
+      sourceId !== undefined &&
+      segmentSourceId !== null &&
+      segmentSourceId !== sourceId
+    ) {
+      continue;
+    }
     if (sourceMs >= segment.sourceInMs && sourceMs < segment.sourceOutMs) {
       return (
         entry.outputStartMs +
@@ -51,7 +74,7 @@ export const sourceToOutputMs = (
 /** Stable fingerprint of the cut list — used to detect caption desync. */
 export const segmentsHash = (edit: Edit): string => {
   const parts = edit.segments.map(
-    (s) => `${s.sourceInMs}:${s.sourceOutMs}:${s.speed}`,
+    (s) => `${s.sourceId ?? ""}:${s.sourceInMs}:${s.sourceOutMs}:${s.speed}`,
   );
   // djb2 — tiny, deterministic, good enough for change detection.
   let hash = 5381;

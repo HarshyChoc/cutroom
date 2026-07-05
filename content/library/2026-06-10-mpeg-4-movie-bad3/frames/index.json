@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "videoId": "2026-06-10-mpeg-4-movie-bad3",
+  "frames": [
+    {
+      "file": "frame-001.jpg",
+      "tMs": 126413
+    },
+    {
+      "file": "frame-002.jpg",
+      "tMs": 379240
+    },
+    {
+      "file": "frame-003.jpg",
+      "tMs": 632066
+    },
+    {
+      "file": "frame-004.jpg",
+      "tMs": 884892
+    },
+    {
+      "file": "frame-005.jpg",
+      "tMs": 1137719
+    },
+    {
+      "file": "frame-006.jpg",
+      "tMs": 1390545
+    },
+    {
+      "file": "frame-007.jpg",
+      "tMs": 1643371
+    },
+    {
+      "file": "frame-008.jpg",
+      "tMs": 1896198
+    },
+    {
+      "file": "frame-009.jpg",
+      "tMs": 2149024
+    },
+    {
+      "file": "frame-010.jpg",
+      "tMs": 2401850
+    },
+    {
+      "file": "frame-011.jpg",
+      "tMs": 2654677
+    },
+    {
+      "file": "frame-012.jpg",
+      "tMs": 2907503
+    }
+  ],
+  "generatedAt": "2026-06-11T15:07:16.376Z"
+}

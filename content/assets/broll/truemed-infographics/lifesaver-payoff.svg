@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.22"/></filter>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000000" flood-opacity="0.16"/></filter>
+    <linearGradient id="wash" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f8f2ea"/><stop offset="1" stop-color="#e9f4ef"/></linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#wash)"/>
+  <path d="M-80 250 C 260 90, 520 260, 1160 110" fill="none" stroke="#2e9d73" stroke-width="120" opacity="0.08"/>
+  <path d="M-110 1620 C 360 1460, 710 1750, 1190 1510" fill="none" stroke="#ef6f61" stroke-width="140" opacity="0.10"/>
+  
+    <text x="84" y="170" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="900" fill="#121416" letter-spacing="0" >CLAIMS LIFESAVER</text>
+    <text x="84" y="238" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#484f4b" letter-spacing="0" >Why this matters in real life</text>
+    <rect x="95" y="340" width="890" height="430" rx="48" fill="#fff4f4" stroke="#e7c5c5" stroke-width="4" filter="url(#shadow)"/>
+    <text x="155" y="450" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="900" fill="#c33636" letter-spacing="0" >Before</text>
+    <text x="155" y="540" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="900" fill="#151515" letter-spacing="0" >rejected receipts</text>
+    <text x="155" y="615" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="900" fill="#151515" letter-spacing="0" >unclear rules</text>
+    <text x="155" y="690" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="900" fill="#151515" letter-spacing="0" >manual paperwork</text>
+    <rect x="95" y="905" width="890" height="430" rx="48" fill="#e8f7ee" stroke="#bfe2cf" stroke-width="4" filter="url(#shadow)"/>
+    <text x="155" y="1015" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="900" fill="#116245" letter-spacing="0" >After Truemed</text>
+    <text x="155" y="1105" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="900" fill="#151515" letter-spacing="0" >eligibility built in</text>
+    <text x="155" y="1180" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="900" fill="#151515" letter-spacing="0" >letter generated</text>
+    <text x="155" y="1255" text-anchor="start" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="900" fill="#151515" letter-spacing="0" >benefits at checkout</text>
+    <circle cx="835" cy="1125" r="92" fill="#27a76f" stroke="none" stroke-width="0"/><polygon points="785,1125 825,1165 900,1075" fill="none" stroke="#fff" stroke-width="18"/>
+    <rect x="140" y="1500" width="800" height="180" rx="34" fill="#121416" stroke="none" stroke-width="0" filter="url(#soft)"/>
+    <text x="540" y="1612" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="39" font-weight="900" fill="#ffffff" letter-spacing="0" >STOP LEAVING MONEY ON THE TABLE</text>
+  
+</svg>

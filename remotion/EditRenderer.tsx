@@ -8,12 +8,12 @@ import type { RendererProps } from "./props";
 
 /**
  * The one generic composition. Layer order (bottom → top):
- * video timeline → overlays → captions. Music is a parallel audio track.
+ * video timeline → overlays/B-roll → captions. Music is a parallel audio track.
  */
 export const EditRenderer: React.FC<RendererProps> = ({ edit, mediaBaseUrl }) => (
   <AbsoluteFill style={{ backgroundColor: "#000" }}>
     <VideoTimeline edit={edit} mediaBaseUrl={mediaBaseUrl} />
-    <OverlayTrack overlays={edit.overlays} />
+    <OverlayTrack overlays={edit.overlays} mediaBaseUrl={mediaBaseUrl} />
     {edit.captions.enabled ? <CaptionTrack captions={edit.captions} /> : null}
     <MusicTrack edit={edit} mediaBaseUrl={mediaBaseUrl} />
   </AbsoluteFill>

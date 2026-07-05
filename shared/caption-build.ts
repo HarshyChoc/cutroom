@@ -4,7 +4,7 @@ import {
   CAPTION_MIN_TOKEN_MS,
   CAPTION_PAGE_GAP_MS,
 } from "./constants";
-import { segmentTimeline } from "./edit-helpers";
+import { segmentTimeline, sourceIdForSegment } from "./edit-helpers";
 import type { CaptionPage, CaptionToken, Edit } from "./schemas/edit";
 import type { TranscriptWord } from "./schemas/transcript";
 
@@ -46,27 +46,33 @@ const placeWords = (
 ): readonly PlacedToken[] => {
   const timeline = segmentTimeline(edit);
   const placed: PlacedToken[] = [];
-  for (const word of words) {
-    const midMs = (word.startMs + word.endMs) / 2;
-    const segmentIndex = timeline.findIndex(
-      (e) => midMs >= e.segment.sourceInMs && midMs < e.segment.sourceOutMs,
-    );
-    if (segmentIndex === -1) {
-      continue; // word was cut
-    }
-    const entry = timeline[segmentIndex] as (typeof timeline)[number];
+  for (const [segmentIndex, entry] of timeline.entries()) {
     const { segment } = entry;
-    const clamp = (ms: number): number =>
-      Math.min(Math.max(ms, segment.sourceInMs), segment.sourceOutMs - 1);
-    const toOutput = (sourceMs: number): number =>
-      entry.outputStartMs +
-      Math.round((clamp(sourceMs) - segment.sourceInMs) / segment.speed);
-    const fromMs = toOutput(word.startMs);
-    const toMs = Math.max(toOutput(word.endMs), fromMs + CAPTION_MIN_TOKEN_MS);
-    placed.push({
-      token: { text: word.text, fromMs, toMs },
-      segmentIndex,
-    });
+    const segmentSourceId = sourceIdForSegment(edit, segment);
+    for (const word of words) {
+      if (
+        word.sourceId !== undefined &&
+        segmentSourceId !== null &&
+        word.sourceId !== segmentSourceId
+      ) {
+        continue;
+      }
+      const midMs = (word.startMs + word.endMs) / 2;
+      if (midMs < segment.sourceInMs || midMs >= segment.sourceOutMs) {
+        continue; // word was cut from this segment
+      }
+      const clamp = (ms: number): number =>
+        Math.min(Math.max(ms, segment.sourceInMs), segment.sourceOutMs - 1);
+      const toOutput = (sourceMs: number): number =>
+        entry.outputStartMs +
+        Math.round((clamp(sourceMs) - segment.sourceInMs) / segment.speed);
+      const fromMs = toOutput(word.startMs);
+      const toMs = Math.max(toOutput(word.endMs), fromMs + CAPTION_MIN_TOKEN_MS);
+      placed.push({
+        token: { text: word.text, fromMs, toMs },
+        segmentIndex,
+      });
+    }
   }
   return placed;
 };

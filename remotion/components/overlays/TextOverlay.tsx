@@ -6,27 +6,51 @@ import {
   useVideoConfig,
 } from "remotion";
 import type { Overlay } from "../../../shared/schemas/edit";
-import { FONT_FAMILY } from "../../fonts";
+import { DISPLAY_FONT_FAMILY, FONT_FAMILY } from "../../fonts";
 
 type TextOverlayData = Extract<Overlay, { type: "text" }>;
 
 const PRESET_STYLES = {
-  headline: (scale: number): React.CSSProperties => ({
-    fontSize: 62 * scale,
-    fontWeight: 800,
+  hook: (scale: number): React.CSSProperties => ({
+    fontFamily: DISPLAY_FONT_FAMILY,
+    fontSize: 94 * scale,
+    fontWeight: 400,
     color: "#FFFFFF",
     textTransform: "uppercase",
+    letterSpacing: 0,
+    WebkitTextStroke: "11px rgba(0,0,0,0.92)",
+    paintOrder: "stroke fill",
+    textShadow: "0 8px 30px rgba(0,0,0,0.65)",
+  }),
+  headline: (scale: number): React.CSSProperties => ({
+    fontFamily: DISPLAY_FONT_FAMILY,
+    fontSize: 84 * scale,
+    fontWeight: 400,
+    color: "#FFFFFF",
+    textTransform: "uppercase",
+    letterSpacing: 0,
+    WebkitTextStroke: "10px rgba(0,0,0,0.9)",
+    paintOrder: "stroke fill",
+    textShadow: "0 5px 24px rgba(0,0,0,0.55)",
+  }),
+  callout: (scale: number): React.CSSProperties => ({
+    fontFamily: DISPLAY_FONT_FAMILY,
+    fontSize: 72 * scale,
+    fontWeight: 400,
+    color: "#FFFFFF",
+    textTransform: "uppercase",
+    letterSpacing: 0,
     WebkitTextStroke: "9px rgba(0,0,0,0.9)",
     paintOrder: "stroke fill",
     textShadow: "0 5px 24px rgba(0,0,0,0.55)",
   }),
   context: (scale: number): React.CSSProperties => ({
     fontSize: 40 * scale,
-    fontWeight: 600,
+    fontWeight: 700,
     color: "#FFFFFF",
-    backgroundColor: "rgba(0,0,0,0.62)",
+    backgroundColor: "rgba(0,0,0,0.68)",
     padding: `${10 * scale}px ${24 * scale}px`,
-    borderRadius: 14 * scale,
+    borderRadius: 12 * scale,
   }),
   sticker: (scale: number): React.CSSProperties => ({
     fontSize: 48 * scale,
@@ -39,15 +63,15 @@ const PRESET_STYLES = {
   }),
 } as const;
 
-/** Rotation must compose with the centering transform, not live in the
- * preset style — a preset `transform` would override positioning. */
 const PRESET_ROTATION: Record<TextOverlayData["preset"], string> = {
+  hook: "",
   headline: "",
+  callout: "",
   context: "",
   sticker: " rotate(-2deg)",
 };
 
-/** Positioned text over the video (headline / context pill / sticker). */
+/** Positioned text over the video (hook / callout / context / sticker). */
 export const TextOverlay: React.FC<{ overlay: TextOverlayData }> = ({
   overlay,
 }) => {
@@ -65,10 +89,10 @@ export const TextOverlay: React.FC<{ overlay: TextOverlayData }> = ({
           top: `${overlay.yPct}%`,
           transform: `translate(-50%, -50%) translateY(${(1 - enter) * 26 * scale}px)${PRESET_ROTATION[overlay.preset]}`,
           opacity: enter,
-          maxWidth: "86%",
+          maxWidth: "88%",
           textAlign: "center",
           fontFamily: FONT_FAMILY,
-          lineHeight: 1.15,
+          lineHeight: 1.05,
           ...PRESET_STYLES[overlay.preset](scale),
         }}
       >

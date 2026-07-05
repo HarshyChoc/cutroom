@@ -30,6 +30,7 @@ import { transcribeVideo } from "./transcribe";
 export interface AnalyzeOptions {
   readonly all?: boolean;
   readonly force?: boolean;
+  readonly skipTranscribe?: boolean;
 }
 
 const findSource = (videoId: string): string => {
@@ -54,7 +55,11 @@ const needsStep = (
   force: boolean,
 ): boolean => force || status.steps[step] === null || !existsSync(artifactPath);
 
-const analyzeOne = async (videoId: string, force: boolean): Promise<void> => {
+const analyzeOne = async (
+  videoId: string,
+  force: boolean,
+  skipTranscribe: boolean,
+): Promise<void> => {
   const paths = videoPaths(videoId);
   const probe = await readProbe(videoId);
   let status = await readStatus(videoId);
@@ -96,7 +101,9 @@ const analyzeOne = async (videoId: string, force: boolean): Promise<void> => {
     log.ok("audio already done");
   }
 
-  if (needsStep(status, "transcribed", paths.transcript, force)) {
+  if (skipTranscribe) {
+    log.warn("skipping transcription by request");
+  } else if (needsStep(status, "transcribed", paths.transcript, force)) {
     const transcript = await transcribeVideo(videoId, { force });
     status = await updateStatus(videoId, (s) => stampStep(s, "transcribed"));
     log.ok(`transcript ready (${transcript.words.length} words)`);
@@ -151,7 +158,11 @@ export const runAnalyze = async (
   for (const videoId of ids) {
     log.step(`Analyzing ${videoId}`);
     try {
-      await analyzeOne(videoId, options.force ?? false);
+      await analyzeOne(
+        videoId,
+        options.force ?? false,
+        options.skipTranscribe ?? false,
+      );
       await updateStatus(videoId, (s) => ({ ...s, lastError: null }));
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);

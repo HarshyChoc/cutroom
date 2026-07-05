@@ -38,6 +38,7 @@ program
   .argument("[id]", "video id (or unique fragment)")
   .option("--all", "analyze every video that needs it")
   .option("--force", "redo all sub-steps even if already done")
+  .option("--skip-transcribe", "create media and frames without speech-to-text")
   .action(async (id, opts) => {
     const { runAnalyze } = await import("./commands/analyze");
     await runAnalyze(id, opts);
@@ -45,9 +46,11 @@ program
 
 program
   .command("transcribe")
-  .description("Speech-to-text with word timestamps (whisper.cpp)")
+  .description("Speech-to-text with word timestamps")
   .argument("<id>", "video id (or unique fragment)")
-  .option("--model <model>", "override whisper model for this run")
+  .option("--provider <provider>", "transcription provider: whisper or elevenlabs", "whisper")
+  .option("--model <model>", "override provider model for this run")
+  .option("--channel-source <sourceId=path>", "multichannel Scribe input source", (value, previous: string[] = []) => [...previous, value], [])
   .option("--force", "re-transcribe even if transcript exists")
   .action(async (id, opts) => {
     const { runTranscribe } = await import("./commands/transcribe");

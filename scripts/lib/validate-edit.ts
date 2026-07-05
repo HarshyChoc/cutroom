@@ -1,6 +1,11 @@
 import { existsSync } from "node:fs";
 import path from "node:path";
-import { outputDurationMs, segmentOutputDurationMs, segmentsHash } from "../../shared/edit-helpers";
+import {
+  outputDurationMs,
+  segmentOutputDurationMs,
+  segmentsHash,
+  sourceForSegment,
+} from "../../shared/edit-helpers";
 import type { Edit } from "../../shared/schemas/edit";
 import { CONTENT_DIR } from "./paths";
 
@@ -23,17 +28,39 @@ export const validateEdit = (edit: Edit): readonly ValidationIssue[] => {
     issues.push({ level: "warning", where, message });
   };
 
-  const sourceAbs = path.join(CONTENT_DIR, edit.source.relPath);
-  if (!existsSync(sourceAbs)) {
-    error("source.relPath", `file not found: ${edit.source.relPath} — run editor analyze first?`);
+  const allSources = [edit.source, ...edit.sources];
+  for (const [i, source] of allSources.entries()) {
+    const where = i === 0 ? "source.relPath" : `sources[${i - 1}].relPath`;
+    const sourceAbs = path.join(CONTENT_DIR, source.relPath);
+    if (!existsSync(sourceAbs)) {
+      error(where, `file not found: ${source.relPath} — run editor analyze first?`);
+    }
+  }
+  const sourceIds = allSources
+    .map((source) => source.id)
+    .filter((id): id is string => id !== undefined);
+  const duplicateSourceIds = sourceIds.filter(
+    (id, i, all) => all.indexOf(id) !== i,
+  );
+  if (duplicateSourceIds.length > 0) {
+    error(
+      "sources",
+      `duplicate source ids: ${[...new Set(duplicateSourceIds)].join(", ")}`,
+    );
   }
 
   const totalMs = outputDurationMs(edit);
 
   edit.segments.forEach((seg, i) => {
     const where = `segments[${i}] (${seg.id})`;
-    if (seg.sourceOutMs > edit.source.durationMs) {
-      error(where, `sourceOutMs ${seg.sourceOutMs} exceeds source duration ${edit.source.durationMs}`);
+    const source = sourceForSegment(edit, seg);
+    if (source === null) {
+      error(where, `unknown sourceId "${seg.sourceId}"`);
+    } else if (seg.sourceOutMs > source.durationMs) {
+      error(
+        where,
+        `sourceOutMs ${seg.sourceOutMs} exceeds ${seg.sourceId ?? "primary"} source duration ${source.durationMs}`,
+      );
     }
     if (seg.transitionAfter === "fade") {
       warning(where, "transitionAfter \"fade\" is not implemented yet — it will render as a hard cut");
@@ -98,6 +125,15 @@ export const validateEdit = (edit: Edit): readonly ValidationIssue[] => {
     }
     if (ov.startMs > totalMs) {
       error(where, `starts at ${ov.startMs} but the video is only ${totalMs}ms long`);
+    }
+    if (ov.type === "image") {
+      const imageAbs = path.join(CONTENT_DIR, ov.src);
+      if (!existsSync(imageAbs)) {
+        error(`${where}.src`, `file not found: ${ov.src} (looked in content/)`);
+      }
+      if (ov.fit === "contain") {
+        warning(`${where}.fit`, "contain can reveal borders; use cover for TikTok full-bleed B-roll");
+      }
     }
   });
 

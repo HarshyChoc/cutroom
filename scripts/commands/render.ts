@@ -33,15 +33,41 @@ const PREVIEW_SCALE = 0.5;
 
 /** For previews, point the edit at the small proxy instead of the mezzanine. */
 const toPreviewEdit = (edit: Edit, videoId: string): Edit => {
-  const proxyRel = edit.source.relPath.replace(
-    WORKSPACE_FILES.mezzanine,
-    WORKSPACE_FILES.proxy,
-  );
-  if (proxyRel === edit.source.relPath || !existsSync(videoPaths(videoId).proxy)) {
-    log.warn("No proxy found — preview will decode the full mezzanine (slower).");
-    return edit;
+  const paths = videoPaths(videoId);
+  const toProxyRel = (relPath: string): string | null => {
+    if (relPath === WORKSPACE_FILES.mezzanine || relPath.endsWith(`/${WORKSPACE_FILES.mezzanine}`)) {
+      const proxyRel = relPath.replace(
+        WORKSPACE_FILES.mezzanine,
+        WORKSPACE_FILES.proxy,
+      );
+      return existsSync(paths.proxy) ? proxyRel : null;
+    }
+    const proxyRel = relPath.replace(/-mezzanine\.mp4$/, "-proxy.mp4");
+    if (proxyRel !== relPath && existsSync(path.join(OUTPUT_DIR, "..", proxyRel))) {
+      return proxyRel;
+    }
+    return null;
+  };
+
+  const sourceProxyRel = toProxyRel(edit.source.relPath);
+  if (sourceProxyRel === null) {
+    log.warn("No proxy found for primary source — preview will decode the full mezzanine (slower).");
   }
-  return { ...edit, source: { ...edit.source, relPath: proxyRel } };
+  return {
+    ...edit,
+    source:
+      sourceProxyRel === null
+        ? edit.source
+        : { ...edit.source, relPath: sourceProxyRel },
+    sources: edit.sources.map((source) => {
+      const proxyRel = toProxyRel(source.relPath);
+      if (proxyRel === null) {
+        log.warn(`No proxy found for source "${source.id}" — preview will decode full source.`);
+        return source;
+      }
+      return { ...source, relPath: proxyRel };
+    }),
+  };
 };
 
 export const runRender = async (

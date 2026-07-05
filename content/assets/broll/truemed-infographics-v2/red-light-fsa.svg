@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#111111"/>
+  <circle cx="540" cy="430" r="260" fill="#ff3b30" opacity="0.28"/>
+  <circle cx="540" cy="430" r="170" fill="#ff6b57" opacity="0.36"/>
+  <rect x="135" y="250" width="810" height="1220" rx="52" fill="#f8f8f4"/>
+  <text x="540" y="395" text-anchor="middle" font-family="Arial Black, Helvetica, sans-serif" font-size="86" fill="#111111">RED LIGHT</text>
+  <text x="540" y="495" text-anchor="middle" font-family="Arial Black, Helvetica, sans-serif" font-size="86" fill="#111111">THERAPY</text>
+  <rect x="260" y="610" width="560" height="560" rx="64" fill="#191919"/>
+  <g fill="#ff453a">
+    <circle cx="365" cy="740" r="34"/><circle cx="465" cy="740" r="34"/><circle cx="565" cy="740" r="34"/><circle cx="665" cy="740" r="34"/><circle cx="765" cy="740" r="34"/>
+    <circle cx="365" cy="850" r="34"/><circle cx="465" cy="850" r="34"/><circle cx="565" cy="850" r="34"/><circle cx="665" cy="850" r="34"/><circle cx="765" cy="850" r="34"/>
+    <circle cx="365" cy="960" r="34"/><circle cx="465" cy="960" r="34"/><circle cx="565" cy="960" r="34"/><circle cx="665" cy="960" r="34"/><circle cx="765" cy="960" r="34"/>
+    <circle cx="365" cy="1070" r="34"/><circle cx="465" cy="1070" r="34"/><circle cx="565" cy="1070" r="34"/><circle cx="665" cy="1070" r="34"/><circle cx="765" cy="1070" r="34"/>
+  </g>
+  <rect x="205" y="1470" width="670" height="132" rx="38" fill="#111111"/>
+  <text x="540" y="1558" text-anchor="middle" font-family="Arial Black, Helvetica, sans-serif" font-size="56" fill="#ffffff">PAID WITH FSA</text>
+  <text x="540" y="1720" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="42" fill="#ffffff">HigherDose + Truemed access</text>
+</svg>

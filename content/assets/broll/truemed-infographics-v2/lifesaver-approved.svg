@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#06281d"/>
+  <rect x="140" y="310" width="800" height="1040" rx="52" fill="#ffffff"/>
+  <text x="540" y="465" text-anchor="middle" font-family="Arial Black, Helvetica, sans-serif" font-size="88" fill="#06281d">TRUEMED</text>
+  <text x="540" y="570" text-anchor="middle" font-family="Arial Black, Helvetica, sans-serif" font-size="88" fill="#06281d">LIFESAVER</text>
+  <circle cx="540" cy="885" r="190" fill="#22c55e"/>
+  <path d="M430 890 L510 970 L675 785" fill="none" stroke="#ffffff" stroke-width="52" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="245" y="1180" width="590" height="120" rx="34" fill="#06281d"/>
+  <text x="540" y="1258" text-anchor="middle" font-family="Arial Black, Helvetica, sans-serif" font-size="56" fill="#ffffff">APPROVED PATH</text>
+</svg>

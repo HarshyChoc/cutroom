@@ -31,6 +31,7 @@ export interface VideoPaths {
   readonly status: string;
   readonly transcript: string;
   readonly whisperRaw: string;
+  readonly elevenLabsRaw: string;
   readonly analysis: string;
   readonly publish: string;
   readonly mediaDir: string;
@@ -38,6 +39,7 @@ export interface VideoPaths {
   readonly mezzanineProbe: string;
   readonly proxy: string;
   readonly audio: string;
+  readonly scribeAudio: string;
   readonly framesDir: string;
   readonly framesIndex: string;
   readonly editsDir: string;
@@ -54,6 +56,7 @@ export const videoPaths = (videoId: string): VideoPaths => {
     status: path.join(dir, WORKSPACE_FILES.status),
     transcript: path.join(dir, WORKSPACE_FILES.transcript),
     whisperRaw: path.join(dir, WORKSPACE_FILES.whisperRaw),
+    elevenLabsRaw: path.join(dir, WORKSPACE_FILES.elevenLabsRaw),
     analysis: path.join(dir, WORKSPACE_FILES.analysis),
     publish: path.join(dir, WORKSPACE_FILES.publish),
     mediaDir: path.join(dir, WORKSPACE_FILES.mediaDir),
@@ -61,6 +64,7 @@ export const videoPaths = (videoId: string): VideoPaths => {
     mezzanineProbe: path.join(dir, WORKSPACE_FILES.mezzanineProbe),
     proxy: path.join(dir, WORKSPACE_FILES.proxy),
     audio: path.join(dir, WORKSPACE_FILES.audio),
+    scribeAudio: path.join(dir, WORKSPACE_FILES.scribeAudio),
     framesDir: path.join(dir, WORKSPACE_FILES.framesDir),
     framesIndex: path.join(dir, WORKSPACE_FILES.framesIndex),
     editsDir: path.join(dir, WORKSPACE_FILES.editsDir),

@@ -1,0 +1,1474 @@
+{
+  "version": 1,
+  "videoId": "2026-06-10-mpeg-4-movie-bad3",
+  "editName": "claims-lifesaver",
+  "title": "Why Truemed Felt Like A Lifesaver",
+  "contentType": "talking-head",
+  "source": {
+    "relPath": "library/2026-06-10-mpeg-4-movie-bad3/media/mezzanine.mp4",
+    "durationMs": 3033919,
+    "width": 1080,
+    "height": 1920
+  },
+  "reframe": {
+    "mode": "crop",
+    "xPct": 0
+  },
+  "segments": [
+    {
+      "id": "seg-01",
+      "sourceInMs": 1728550,
+      "sourceOutMs": 1735660,
+      "speed": 1,
+      "volume": 1,
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 2,
+            "xPct": 0,
+            "yPct": 50
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Cold open: Truemed was a lifesaver."
+    },
+    {
+      "id": "seg-02",
+      "sourceInMs": 1675110,
+      "sourceOutMs": 1683670,
+      "speed": 1,
+      "volume": 1,
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 2.08,
+            "xPct": 0,
+            "yPct": -50
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Trimmed question: HSA/FSA use outside Truemed."
+    },
+    {
+      "id": "seg-03",
+      "sourceInMs": 1683670,
+      "sourceOutMs": 1692660,
+      "speed": 1,
+      "volume": 1,
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 2,
+            "xPct": 0,
+            "yPct": 50
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "She had FSA/HSA accounts for a few years."
+    },
+    {
+      "id": "seg-04",
+      "sourceInMs": 1692660,
+      "sourceOutMs": 1700500,
+      "speed": 1,
+      "volume": 1,
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 2.08,
+            "xPct": 0,
+            "yPct": 50
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Before Truemed, they were difficult."
+    },
+    {
+      "id": "seg-05",
+      "sourceInMs": 1700500,
+      "sourceOutMs": 1710900,
+      "speed": 1,
+      "volume": 1,
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 2,
+            "xPct": 0,
+            "yPct": 50
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Claims were rejected nearly everything."
+    },
+    {
+      "id": "seg-06",
+      "sourceInMs": 1710900,
+      "sourceOutMs": 1722490,
+      "speed": 1,
+      "volume": 1,
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 2.08,
+            "xPct": 0,
+            "yPct": 50
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "Insurance seemed to say no first to see if she would push."
+    },
+    {
+      "id": "seg-07",
+      "sourceInMs": 1722490,
+      "sourceOutMs": 1728550,
+      "speed": 1,
+      "volume": 1,
+      "transform": {
+        "keyframes": [
+          {
+            "tMs": 0,
+            "scale": 2,
+            "xPct": 0,
+            "yPct": 50
+          }
+        ],
+        "easing": "hold"
+      },
+      "transitionAfter": "cut",
+      "note": "She was sending letter after letter and repeating paperwork."
+    }
+  ],
+  "captions": {
+    "enabled": true,
+    "style": {
+      "preset": "bold-center",
+      "yPct": 68,
+      "maxWordsPerPage": 3,
+      "fontSizePx": 62,
+      "highlightColor": "#FFFFFF",
+      "uppercase": true
+    },
+    "pages": [
+      {
+        "startMs": 0,
+        "endMs": 560,
+        "tokens": [
+          {
+            "text": " first",
+            "fromMs": 0,
+            "toMs": 190
+          },
+          {
+            "text": " time",
+            "fromMs": 190,
+            "toMs": 340
+          },
+          {
+            "text": " around",
+            "fromMs": 340,
+            "toMs": 560
+          }
+        ]
+      },
+      {
+        "startMs": 560,
+        "endMs": 1330,
+        "tokens": [
+          {
+            "text": " and",
+            "fromMs": 560,
+            "toMs": 670
+          },
+          {
+            "text": " things",
+            "fromMs": 670,
+            "toMs": 970
+          },
+          {
+            "text": " like",
+            "fromMs": 970,
+            "toMs": 1330
+          }
+        ]
+      },
+      {
+        "startMs": 1330,
+        "endMs": 2570,
+        "tokens": [
+          {
+            "text": " that.",
+            "fromMs": 1330,
+            "toMs": 1970
+          },
+          {
+            "text": " So",
+            "fromMs": 1970,
+            "toMs": 2120
+          },
+          {
+            "text": " Truemed",
+            "fromMs": 2120,
+            "toMs": 2570
+          }
+        ]
+      },
+      {
+        "startMs": 2570,
+        "endMs": 3450,
+        "tokens": [
+          {
+            "text": " just",
+            "fromMs": 2570,
+            "toMs": 2950
+          },
+          {
+            "text": " really",
+            "fromMs": 2950,
+            "toMs": 3250
+          },
+          {
+            "text": " was",
+            "fromMs": 3250,
+            "toMs": 3450
+          }
+        ]
+      },
+      {
+        "startMs": 3450,
+        "endMs": 4990,
+        "tokens": [
+          {
+            "text": " a",
+            "fromMs": 3450,
+            "toMs": 3520
+          },
+          {
+            "text": " lifesaver.",
+            "fromMs": 3520,
+            "toMs": 4410
+          },
+          {
+            "text": " That's",
+            "fromMs": 4410,
+            "toMs": 4990
+          }
+        ]
+      },
+      {
+        "startMs": 4990,
+        "endMs": 6430,
+        "tokens": [
+          {
+            "text": " amazing.",
+            "fromMs": 4990,
+            "toMs": 5960
+          },
+          {
+            "text": " I'm",
+            "fromMs": 5960,
+            "toMs": 6240
+          },
+          {
+            "text": " so",
+            "fromMs": 6240,
+            "toMs": 6430
+          }
+        ]
+      },
+      {
+        "startMs": 6430,
+        "endMs": 7110,
+        "tokens": [
+          {
+            "text": " happy",
+            "fromMs": 6430,
+            "toMs": 6910
+          },
+          {
+            "text": " to",
+            "fromMs": 6910,
+            "toMs": 7109
+          }
+        ]
+      },
+      {
+        "startMs": 7110,
+        "endMs": 8740,
+        "tokens": [
+          {
+            "text": " outside",
+            "fromMs": 7110,
+            "toMs": 7750
+          },
+          {
+            "text": " of",
+            "fromMs": 7750,
+            "toMs": 7930
+          },
+          {
+            "text": " Truemed,",
+            "fromMs": 7930,
+            "toMs": 8740
+          }
+        ]
+      },
+      {
+        "startMs": 8740,
+        "endMs": 9770,
+        "tokens": [
+          {
+            "text": " have",
+            "fromMs": 8740,
+            "toMs": 9100
+          },
+          {
+            "text": " you",
+            "fromMs": 9100,
+            "toMs": 9370
+          },
+          {
+            "text": " been",
+            "fromMs": 9370,
+            "toMs": 9770
+          }
+        ]
+      },
+      {
+        "startMs": 9770,
+        "endMs": 10560,
+        "tokens": [
+          {
+            "text": " able",
+            "fromMs": 9770,
+            "toMs": 10090
+          },
+          {
+            "text": " to",
+            "fromMs": 10090,
+            "toMs": 10270
+          },
+          {
+            "text": " use",
+            "fromMs": 10270,
+            "toMs": 10560
+          }
+        ]
+      },
+      {
+        "startMs": 10560,
+        "endMs": 11710,
+        "tokens": [
+          {
+            "text": " like",
+            "fromMs": 10560,
+            "toMs": 10900
+          },
+          {
+            "text": " your",
+            "fromMs": 10900,
+            "toMs": 11260
+          },
+          {
+            "text": " HSA",
+            "fromMs": 11260,
+            "toMs": 11710
+          }
+        ]
+      },
+      {
+        "startMs": 11710,
+        "endMs": 12860,
+        "tokens": [
+          {
+            "text": " or",
+            "fromMs": 11710,
+            "toMs": 11770
+          },
+          {
+            "text": " FSA",
+            "fromMs": 11730,
+            "toMs": 12040
+          },
+          {
+            "text": " accounts",
+            "fromMs": 12040,
+            "toMs": 12860
+          }
+        ]
+      },
+      {
+        "startMs": 12860,
+        "endMs": 13590,
+        "tokens": [
+          {
+            "text": " and",
+            "fromMs": 12860,
+            "toMs": 13080
+          },
+          {
+            "text": " how",
+            "fromMs": 13080,
+            "toMs": 13430
+          },
+          {
+            "text": " long",
+            "fromMs": 13430,
+            "toMs": 13590
+          }
+        ]
+      },
+      {
+        "startMs": 13590,
+        "endMs": 14450,
+        "tokens": [
+          {
+            "text": " have",
+            "fromMs": 13590,
+            "toMs": 13870
+          },
+          {
+            "text": " you",
+            "fromMs": 13870,
+            "toMs": 14100
+          },
+          {
+            "text": " been",
+            "fromMs": 14100,
+            "toMs": 14450
+          }
+        ]
+      },
+      {
+        "startMs": 14450,
+        "endMs": 15670,
+        "tokens": [
+          {
+            "text": " using",
+            "fromMs": 14450,
+            "toMs": 14750
+          },
+          {
+            "text": " those",
+            "fromMs": 14750,
+            "toMs": 15110
+          },
+          {
+            "text": " for?",
+            "fromMs": 15110,
+            "toMs": 15669
+          }
+        ]
+      },
+      {
+        "startMs": 15670,
+        "endMs": 16560,
+        "tokens": [
+          {
+            "text": " Like",
+            "fromMs": 15670,
+            "toMs": 15830
+          },
+          {
+            "text": " maybe",
+            "fromMs": 15830,
+            "toMs": 16190
+          },
+          {
+            "text": " even",
+            "fromMs": 16190,
+            "toMs": 16560
+          }
+        ]
+      },
+      {
+        "startMs": 16560,
+        "endMs": 18000,
+        "tokens": [
+          {
+            "text": " like",
+            "fromMs": 16560,
+            "toMs": 16770
+          },
+          {
+            "text": " before",
+            "fromMs": 16770,
+            "toMs": 17200
+          },
+          {
+            "text": " Truemed?",
+            "fromMs": 17200,
+            "toMs": 18000
+          }
+        ]
+      },
+      {
+        "startMs": 18000,
+        "endMs": 18740,
+        "tokens": [
+          {
+            "text": " I",
+            "fromMs": 18000,
+            "toMs": 18100
+          },
+          {
+            "text": " had",
+            "fromMs": 18100,
+            "toMs": 18420
+          },
+          {
+            "text": " FSA",
+            "fromMs": 18420,
+            "toMs": 18740
+          }
+        ]
+      },
+      {
+        "startMs": 18740,
+        "endMs": 20530,
+        "tokens": [
+          {
+            "text": " and/or",
+            "fromMs": 18740,
+            "toMs": 19370
+          },
+          {
+            "text": " HSA",
+            "fromMs": 19370,
+            "toMs": 19680
+          },
+          {
+            "text": " accounts",
+            "fromMs": 19680,
+            "toMs": 20530
+          }
+        ]
+      },
+      {
+        "startMs": 20530,
+        "endMs": 21270,
+        "tokens": [
+          {
+            "text": " for",
+            "fromMs": 20530,
+            "toMs": 20850
+          },
+          {
+            "text": " a",
+            "fromMs": 20850,
+            "toMs": 20950
+          },
+          {
+            "text": " few",
+            "fromMs": 20950,
+            "toMs": 21270
+          }
+        ]
+      },
+      {
+        "startMs": 21270,
+        "endMs": 23720,
+        "tokens": [
+          {
+            "text": " years",
+            "fromMs": 21270,
+            "toMs": 21800
+          },
+          {
+            "text": " sporadically.",
+            "fromMs": 21800,
+            "toMs": 23400
+          },
+          {
+            "text": " And",
+            "fromMs": 23400,
+            "toMs": 23720
+          }
+        ]
+      },
+      {
+        "startMs": 23720,
+        "endMs": 24660,
+        "tokens": [
+          {
+            "text": " if",
+            "fromMs": 23720,
+            "toMs": 23930
+          },
+          {
+            "text": " I'm",
+            "fromMs": 23930,
+            "toMs": 24659
+          }
+        ]
+      },
+      {
+        "startMs": 24660,
+        "endMs": 25960,
+        "tokens": [
+          {
+            "text": " being",
+            "fromMs": 24660,
+            "toMs": 24770
+          },
+          {
+            "text": " honest",
+            "fromMs": 24770,
+            "toMs": 25410
+          },
+          {
+            "text": " with",
+            "fromMs": 25410,
+            "toMs": 25960
+          }
+        ]
+      },
+      {
+        "startMs": 25960,
+        "endMs": 26710,
+        "tokens": [
+          {
+            "text": " you,",
+            "fromMs": 25960,
+            "toMs": 26410
+          },
+          {
+            "text": " I",
+            "fromMs": 26410,
+            "toMs": 26470
+          },
+          {
+            "text": " had",
+            "fromMs": 26460,
+            "toMs": 26710
+          }
+        ]
+      },
+      {
+        "startMs": 26710,
+        "endMs": 27640,
+        "tokens": [
+          {
+            "text": " more",
+            "fromMs": 26710,
+            "toMs": 27050
+          },
+          {
+            "text": " FSA",
+            "fromMs": 27050,
+            "toMs": 27300
+          },
+          {
+            "text": " than",
+            "fromMs": 27300,
+            "toMs": 27640
+          }
+        ]
+      },
+      {
+        "startMs": 27640,
+        "endMs": 28470,
+        "tokens": [
+          {
+            "text": " I",
+            "fromMs": 27640,
+            "toMs": 27720
+          },
+          {
+            "text": " had",
+            "fromMs": 27720,
+            "toMs": 27970
+          },
+          {
+            "text": " HSA.",
+            "fromMs": 27970,
+            "toMs": 28470
+          }
+        ]
+      },
+      {
+        "startMs": 28470,
+        "endMs": 29230,
+        "tokens": [
+          {
+            "text": " And",
+            "fromMs": 28470,
+            "toMs": 28710
+          },
+          {
+            "text": " I",
+            "fromMs": 28710,
+            "toMs": 29080
+          },
+          {
+            "text": " found",
+            "fromMs": 29080,
+            "toMs": 29230
+          }
+        ]
+      },
+      {
+        "startMs": 29230,
+        "endMs": 30080,
+        "tokens": [
+          {
+            "text": " them",
+            "fromMs": 29230,
+            "toMs": 29570
+          },
+          {
+            "text": " to",
+            "fromMs": 29570,
+            "toMs": 29740
+          },
+          {
+            "text": " be,",
+            "fromMs": 29740,
+            "toMs": 30080
+          }
+        ]
+      },
+      {
+        "startMs": 30080,
+        "endMs": 31020,
+        "tokens": [
+          {
+            "text": " until",
+            "fromMs": 30080,
+            "toMs": 30510
+          },
+          {
+            "text": " I",
+            "fromMs": 30510,
+            "toMs": 30590
+          },
+          {
+            "text": " found",
+            "fromMs": 30590,
+            "toMs": 31020
+          }
+        ]
+      },
+      {
+        "startMs": 31020,
+        "endMs": 32440,
+        "tokens": [
+          {
+            "text": " Truemed,",
+            "fromMs": 31020,
+            "toMs": 31920
+          },
+          {
+            "text": " I",
+            "fromMs": 31920,
+            "toMs": 32240
+          }
+        ]
+      },
+      {
+        "startMs": 32500,
+        "endMs": 34110,
+        "tokens": [
+          {
+            "text": " found",
+            "fromMs": 32500,
+            "toMs": 33090
+          },
+          {
+            "text": " them",
+            "fromMs": 33090,
+            "toMs": 33770
+          },
+          {
+            "text": " to",
+            "fromMs": 33770,
+            "toMs": 34110
+          }
+        ]
+      },
+      {
+        "startMs": 34110,
+        "endMs": 36880,
+        "tokens": [
+          {
+            "text": " be",
+            "fromMs": 34110,
+            "toMs": 34440
+          },
+          {
+            "text": " so",
+            "fromMs": 34440,
+            "toMs": 34770
+          },
+          {
+            "text": " difficult.",
+            "fromMs": 34770,
+            "toMs": 36880
+          }
+        ]
+      },
+      {
+        "startMs": 36880,
+        "endMs": 39500,
+        "tokens": [
+          {
+            "text": " Like",
+            "fromMs": 36880,
+            "toMs": 37460
+          },
+          {
+            "text": " so",
+            "fromMs": 37460,
+            "toMs": 37750
+          },
+          {
+            "text": " difficult.",
+            "fromMs": 37750,
+            "toMs": 39500
+          }
+        ]
+      },
+      {
+        "startMs": 39500,
+        "endMs": 41350,
+        "tokens": [
+          {
+            "text": " They",
+            "fromMs": 39500,
+            "toMs": 39860
+          },
+          {
+            "text": " rejected",
+            "fromMs": 39860,
+            "toMs": 40450
+          },
+          {
+            "text": " nearly",
+            "fromMs": 40450,
+            "toMs": 41350
+          }
+        ]
+      },
+      {
+        "startMs": 41350,
+        "endMs": 42510,
+        "tokens": [
+          {
+            "text": " everything.",
+            "fromMs": 41350,
+            "toMs": 42340
+          },
+          {
+            "text": " I",
+            "fromMs": 42340,
+            "toMs": 42400
+          },
+          {
+            "text": " was",
+            "fromMs": 42380,
+            "toMs": 42510
+          }
+        ]
+      },
+      {
+        "startMs": 42510,
+        "endMs": 42900,
+        "tokens": [
+          {
+            "text": " like,",
+            "fromMs": 42510,
+            "toMs": 42780
+          },
+          {
+            "text": " is",
+            "fromMs": 42780,
+            "toMs": 42899
+          }
+        ]
+      },
+      {
+        "startMs": 42900,
+        "endMs": 43440,
+        "tokens": [
+          {
+            "text": " this",
+            "fromMs": 42900,
+            "toMs": 43140
+          },
+          {
+            "text": " just",
+            "fromMs": 43140,
+            "toMs": 43380
+          },
+          {
+            "text": " a",
+            "fromMs": 43380,
+            "toMs": 43440
+          }
+        ]
+      },
+      {
+        "startMs": 43440,
+        "endMs": 44400,
+        "tokens": [
+          {
+            "text": " fun",
+            "fromMs": 43440,
+            "toMs": 43620
+          },
+          {
+            "text": " game?",
+            "fromMs": 43620,
+            "toMs": 44040
+          },
+          {
+            "text": " Like,",
+            "fromMs": 44040,
+            "toMs": 44400
+          }
+        ]
+      },
+      {
+        "startMs": 44400,
+        "endMs": 45000,
+        "tokens": [
+          {
+            "text": " do",
+            "fromMs": 44400,
+            "toMs": 44520
+          },
+          {
+            "text": " they",
+            "fromMs": 44520,
+            "toMs": 44760
+          },
+          {
+            "text": " just",
+            "fromMs": 44760,
+            "toMs": 45000
+          }
+        ]
+      },
+      {
+        "startMs": 45000,
+        "endMs": 45680,
+        "tokens": [
+          {
+            "text": " say",
+            "fromMs": 45000,
+            "toMs": 45190
+          },
+          {
+            "text": " no?",
+            "fromMs": 45190,
+            "toMs": 45540
+          },
+          {
+            "text": " Is",
+            "fromMs": 45540,
+            "toMs": 45680
+          }
+        ]
+      },
+      {
+        "startMs": 45680,
+        "endMs": 46980,
+        "tokens": [
+          {
+            "text": " this",
+            "fromMs": 45680,
+            "toMs": 45970
+          },
+          {
+            "text": " insurance?",
+            "fromMs": 45970,
+            "toMs": 46880
+          },
+          {
+            "text": " Where",
+            "fromMs": 46880,
+            "toMs": 46980
+          }
+        ]
+      },
+      {
+        "startMs": 46980,
+        "endMs": 47390,
+        "tokens": [
+          {
+            "text": " they",
+            "fromMs": 46980,
+            "toMs": 47050
+          },
+          {
+            "text": " just",
+            "fromMs": 47050,
+            "toMs": 47160
+          },
+          {
+            "text": " say",
+            "fromMs": 47160,
+            "toMs": 47390
+          }
+        ]
+      },
+      {
+        "startMs": 47390,
+        "endMs": 48470,
+        "tokens": [
+          {
+            "text": " no",
+            "fromMs": 47390,
+            "toMs": 47540
+          },
+          {
+            "text": " first,",
+            "fromMs": 47540,
+            "toMs": 48250
+          },
+          {
+            "text": " three",
+            "fromMs": 48250,
+            "toMs": 48470
+          }
+        ]
+      },
+      {
+        "startMs": 48470,
+        "endMs": 49240,
+        "tokens": [
+          {
+            "text": " times",
+            "fromMs": 48470,
+            "toMs": 48800
+          },
+          {
+            "text": " to",
+            "fromMs": 48800,
+            "toMs": 49040
+          },
+          {
+            "text": " see",
+            "fromMs": 49040,
+            "toMs": 49240
+          }
+        ]
+      },
+      {
+        "startMs": 49240,
+        "endMs": 50160,
+        "tokens": [
+          {
+            "text": " if",
+            "fromMs": 49240,
+            "toMs": 49400
+          },
+          {
+            "text": " you'll",
+            "fromMs": 49400,
+            "toMs": 49850
+          },
+          {
+            "text": " push",
+            "fromMs": 49850,
+            "toMs": 50160
+          }
+        ]
+      },
+      {
+        "startMs": 50160,
+        "endMs": 51540,
+        "tokens": [
+          {
+            "text": " further,",
+            "fromMs": 50160,
+            "toMs": 51000
+          },
+          {
+            "text": " you",
+            "fromMs": 51000,
+            "toMs": 51080
+          },
+          {
+            "text": " know,",
+            "fromMs": 51080,
+            "toMs": 51540
+          }
+        ]
+      },
+      {
+        "startMs": 51540,
+        "endMs": 52630,
+        "tokens": [
+          {
+            "text": " which",
+            "fromMs": 51540,
+            "toMs": 51930
+          },
+          {
+            "text": " I",
+            "fromMs": 51930,
+            "toMs": 52000
+          },
+          {
+            "text": " will.",
+            "fromMs": 52000,
+            "toMs": 52630
+          }
+        ]
+      },
+      {
+        "startMs": 52630,
+        "endMs": 52840,
+        "tokens": [
+          {
+            "text": " So",
+            "fromMs": 52630,
+            "toMs": 52700
+          },
+          {
+            "text": " then",
+            "fromMs": 52700,
+            "toMs": 52760
+          },
+          {
+            "text": " I",
+            "fromMs": 52760,
+            "toMs": 52840
+          }
+        ]
+      },
+      {
+        "startMs": 52840,
+        "endMs": 54100,
+        "tokens": [
+          {
+            "text": " was",
+            "fromMs": 52840,
+            "toMs": 53090
+          },
+          {
+            "text": " like",
+            "fromMs": 53090,
+            "toMs": 53420
+          },
+          {
+            "text": " sending",
+            "fromMs": 53420,
+            "toMs": 54100
+          }
+        ]
+      },
+      {
+        "startMs": 54100,
+        "endMs": 54490,
+        "tokens": [
+          {
+            "text": " letter",
+            "fromMs": 54100,
+            "toMs": 54489
+          }
+        ]
+      },
+      {
+        "startMs": 54490,
+        "endMs": 55640,
+        "tokens": [
+          {
+            "text": " after",
+            "fromMs": 54490,
+            "toMs": 54900
+          },
+          {
+            "text": " letter",
+            "fromMs": 54900,
+            "toMs": 55390
+          },
+          {
+            "text": " and",
+            "fromMs": 55390,
+            "toMs": 55640
+          }
+        ]
+      },
+      {
+        "startMs": 55640,
+        "endMs": 56870,
+        "tokens": [
+          {
+            "text": " having",
+            "fromMs": 55640,
+            "toMs": 56130
+          },
+          {
+            "text": " to",
+            "fromMs": 56130,
+            "toMs": 56290
+          },
+          {
+            "text": " explain",
+            "fromMs": 56290,
+            "toMs": 56870
+          }
+        ]
+      },
+      {
+        "startMs": 56870,
+        "endMs": 58570,
+        "tokens": [
+          {
+            "text": " these",
+            "fromMs": 56870,
+            "toMs": 57100
+          },
+          {
+            "text": " different",
+            "fromMs": 57100,
+            "toMs": 58020
+          },
+          {
+            "text": " things",
+            "fromMs": 58020,
+            "toMs": 58570
+          }
+        ]
+      },
+      {
+        "startMs": 58570,
+        "endMs": 59250,
+        "tokens": [
+          {
+            "text": " and",
+            "fromMs": 58570,
+            "toMs": 58840
+          },
+          {
+            "text": " explain",
+            "fromMs": 58840,
+            "toMs": 59100
+          },
+          {
+            "text": " that",
+            "fromMs": 59100,
+            "toMs": 59250
+          }
+        ]
+      },
+      {
+        "startMs": 59250,
+        "endMs": 59840,
+        "tokens": [
+          {
+            "text": " I've",
+            "fromMs": 59250,
+            "toMs": 59390
+          },
+          {
+            "text": " already",
+            "fromMs": 59390,
+            "toMs": 59650
+          },
+          {
+            "text": " given",
+            "fromMs": 59650,
+            "toMs": 59840
+          }
+        ]
+      },
+      {
+        "startMs": 59840,
+        "endMs": 60250,
+        "tokens": [
+          {
+            "text": " that",
+            "fromMs": 59840,
+            "toMs": 59990
+          },
+          {
+            "text": " piece",
+            "fromMs": 59990,
+            "toMs": 60230
+          },
+          {
+            "text": " of",
+            "fromMs": 60230,
+            "toMs": 60290
+          }
+        ]
+      },
+      {
+        "startMs": 60250,
+        "endMs": 60749,
+        "tokens": [
+          {
+            "text": " paper",
+            "fromMs": 60250,
+            "toMs": 60470
+          },
+          {
+            "text": " the",
+            "fromMs": 60470,
+            "toMs": 60549
+          }
+        ]
+      }
+    ],
+    "builtFromSegmentsHash": "2c786f91"
+  },
+  "overlays": [
+    {
+      "type": "image",
+      "startMs": 0,
+      "endMs": 3900,
+      "src": "assets/broll/truemed-infographics/lifesaver-payoff.png",
+      "fit": "cover",
+      "opacity": 1,
+      "motion": {
+        "fromScale": 1.04,
+        "toScale": 1.14,
+        "fromXPct": 0,
+        "toXPct": 1,
+        "fromYPct": 0,
+        "toYPct": 0
+      }
+    },
+    {
+      "type": "image",
+      "startMs": 17100,
+      "endMs": 21500,
+      "src": "assets/broll/truemed-infographics/benefits-card-checkout.png",
+      "fit": "cover",
+      "opacity": 1,
+      "motion": {
+        "fromScale": 1.05,
+        "toScale": 1.13,
+        "fromXPct": 1,
+        "toXPct": -1,
+        "fromYPct": 0,
+        "toYPct": 0
+      }
+    },
+    {
+      "type": "image",
+      "startMs": 28900,
+      "endMs": 33400,
+      "src": "assets/broll/truemed-infographics/claims-friction.png",
+      "fit": "cover",
+      "opacity": 1,
+      "motion": {
+        "fromScale": 1.04,
+        "toScale": 1.14,
+        "fromXPct": -1,
+        "toXPct": 1,
+        "fromYPct": 0,
+        "toYPct": 0
+      }
+    },
+    {
+      "type": "image",
+      "startMs": 37500,
+      "endMs": 42000,
+      "src": "assets/broll/truemed-infographics/claims-friction.png",
+      "fit": "cover",
+      "opacity": 1,
+      "motion": {
+        "fromScale": 1.05,
+        "toScale": 1.13,
+        "fromXPct": 1,
+        "toXPct": -1,
+        "fromYPct": 0,
+        "toYPct": 1
+      }
+    },
+    {
+      "type": "image",
+      "startMs": 49100,
+      "endMs": 53600,
+      "src": "assets/broll/truemed-infographics/medical-necessity-letter.png",
+      "fit": "cover",
+      "opacity": 1,
+      "motion": {
+        "fromScale": 1.04,
+        "toScale": 1.12,
+        "fromXPct": -1,
+        "toXPct": 1,
+        "fromYPct": -1,
+        "toYPct": 1
+      }
+    },
+    {
+      "type": "image",
+      "startMs": 55600,
+      "endMs": 60200,
+      "src": "assets/broll/truemed-infographics/lifesaver-payoff.png",
+      "fit": "cover",
+      "opacity": 1,
+      "motion": {
+        "fromScale": 1.05,
+        "toScale": 1.14,
+        "fromXPct": 1,
+        "toXPct": 0,
+        "fromYPct": 1,
+        "toYPct": -1
+      }
+    },
+    {
+      "type": "text",
+      "startMs": 0,
+      "endMs": 3000,
+      "text": "TRUEMED WAS A LIFESAVER",
+      "xPct": 50,
+      "yPct": 29,
+      "preset": "hook"
+    },
+    {
+      "type": "text",
+      "startMs": 28900,
+      "endMs": 33400,
+      "text": "REJECTED EVERYTHING",
+      "xPct": 50,
+      "yPct": 39,
+      "preset": "headline"
+    },
+    {
+      "type": "text",
+      "startMs": 49100,
+      "endMs": 53600,
+      "text": "LETTER AFTER LETTER",
+      "xPct": 50,
+      "yPct": 39,
+      "preset": "callout"
+    },
+    {
+      "type": "text",
+      "startMs": 55600,
+      "endMs": 60200,
+      "text": "NO MORE FRICTION",
+      "xPct": 50,
+      "yPct": 39,
+      "preset": "headline"
+    }
+  ],
+  "output": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30
+  }
+}

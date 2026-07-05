@@ -20,4 +20,5 @@ content/library/*/frames/*.jpg
 content/library/*/frames/*.jpeg
 content/library/*/frames/*.png
 content/library/*/whisper-raw.json
+content/library/*/elevenlabs-raw.json
 content/library/*/edits/*/qc/

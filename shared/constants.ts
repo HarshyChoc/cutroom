@@ -48,6 +48,8 @@ export const WORKSPACE_FILES = {
   status: "status.json",
   transcript: "transcript.json",
   whisperRaw: "whisper-raw.json",
+  elevenLabsRaw: "elevenlabs-raw.json",
+  scribeAudio: "media/scribe-multichannel.wav",
   analysis: "analysis.md",
   publish: "publish.md",
   mediaDir: "media",

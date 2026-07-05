@@ -7,6 +7,7 @@ import {
 } from "remotion";
 import { contentUrl } from "../../shared/media-url";
 import type { Edit, Segment } from "../../shared/schemas/edit";
+import { sourceForSegment } from "../../shared/edit-helpers";
 import { framesToMs, msToFrames } from "../../shared/time";
 import {
   computeZoom,
@@ -24,6 +25,11 @@ const layoutStyle = (layout: CoverLayout): React.CSSProperties => ({
   top: `${layout.topPct}%`,
 });
 
+const clampPanPct = (panPct: number, scale: number): number => {
+  const maxPanPct = Math.max(0, (scale - 1) * 50);
+  return Math.min(maxPanPct, Math.max(-maxPanPct, panPct));
+};
+
 /** One kept range of the source: trim, speed, reframe crop, zoom/punch-in. */
 export const SegmentVideo: React.FC<{
   edit: Edit;
@@ -33,18 +39,21 @@ export const SegmentVideo: React.FC<{
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
 
-  const src = contentUrl(mediaBaseUrl, edit.source.relPath);
-  const sourceAspect = edit.source.width / edit.source.height;
+  const source = sourceForSegment(edit, segment) ?? edit.source;
+  const src = contentUrl(mediaBaseUrl, source.relPath);
+  const sourceAspect = source.width / source.height;
   const outputAspect = edit.output.width / edit.output.height;
   const reframeXPct = segment.reframe?.xPct ?? edit.reframe.xPct;
 
   const zoom = segment.transform
     ? computeZoom(segment.transform, framesToMs(frame, fps))
     : IDENTITY_ZOOM;
+  const panXPct = clampPanPct(zoom.panXPct, zoom.scale);
+  const panYPct = clampPanPct(zoom.panYPct, zoom.scale);
   const zoomStyle: React.CSSProperties = {
     position: "absolute",
     inset: 0,
-    transform: `translate(${(zoom.panXPct / 100) * width}px, ${(zoom.panYPct / 100) * height}px) scale(${zoom.scale})`,
+    transform: `translate(${(panXPct / 100) * width}px, ${(panYPct / 100) * height}px) scale(${zoom.scale})`,
   };
 
   const video = (

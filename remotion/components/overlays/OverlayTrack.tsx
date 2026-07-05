@@ -2,12 +2,14 @@ import React from "react";
 import { Sequence, useVideoConfig } from "remotion";
 import type { Overlay } from "../../../shared/schemas/edit";
 import { msToFrames } from "../../../shared/time";
+import { ImageOverlay } from "./ImageOverlay";
 import { TextOverlay } from "./TextOverlay";
 import { TitleCard } from "./TitleCard";
 
-export const OverlayTrack: React.FC<{ overlays: readonly Overlay[] }> = ({
-  overlays,
-}) => {
+export const OverlayTrack: React.FC<{
+  overlays: readonly Overlay[];
+  mediaBaseUrl: string;
+}> = ({ overlays, mediaBaseUrl }) => {
   const { fps } = useVideoConfig();
   return (
     <>
@@ -23,6 +25,8 @@ export const OverlayTrack: React.FC<{ overlays: readonly Overlay[] }> = ({
         >
           {overlay.type === "title-card" ? (
             <TitleCard overlay={overlay} />
+          ) : overlay.type === "image" ? (
+            <ImageOverlay overlay={overlay} mediaBaseUrl={mediaBaseUrl} />
           ) : (
             <TextOverlay overlay={overlay} />
           )}

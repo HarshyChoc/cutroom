@@ -41,6 +41,8 @@ export const segmentSchema = z
   .object({
     /** Stable handle, e.g. "seg-01". Keep ids when re-editing. */
     id: z.string().min(1),
+    /** Optional source handle; omitted means edit.source. */
+    sourceId: z.string().min(1).optional(),
     sourceInMs: ms,
     sourceOutMs: ms,
     speed: z.number().min(MIN_SEGMENT_SPEED).max(MAX_SEGMENT_SPEED).default(1),
@@ -85,6 +87,17 @@ export const captionStyleSchema = z.object({
   uppercase: z.boolean().optional(),
 });
 
+const imageMotionSchema = z
+  .object({
+    fromScale: z.number().min(1).max(MAX_ZOOM_SCALE).default(1.04),
+    toScale: z.number().min(1).max(MAX_ZOOM_SCALE).default(1.14),
+    fromXPct: pct100.default(0),
+    toXPct: pct100.default(0),
+    fromYPct: pct100.default(0),
+    toYPct: pct100.default(0),
+  })
+  .prefault({});
+
 export const captionsSchema = z.object({
   enabled: z.boolean().default(true),
   style: captionStyleSchema.prefault({}),
@@ -115,7 +128,19 @@ export const overlaySchema = z.discriminatedUnion("type", [
     text: z.string().min(1),
     xPct: z.number().min(0).max(100).default(50),
     yPct: z.number().min(0).max(100).default(18),
-    preset: z.enum(["headline", "context", "sticker"]).default("headline"),
+    preset: z
+      .enum(["hook", "headline", "callout", "context", "sticker"])
+      .default("headline"),
+  }),
+  z.object({
+    type: z.literal("image"),
+    startMs: ms,
+    endMs: ms,
+    /** Relative to content/, e.g. "assets/broll/truemed/red-light.png". */
+    src: z.string().min(1),
+    fit: z.enum(["cover", "contain"]).default("cover"),
+    opacity: z.number().min(0).max(1).default(1),
+    motion: imageMotionSchema,
   }),
 ]);
 export type Overlay = z.infer<typeof overlaySchema>;
@@ -140,6 +165,22 @@ export const musicSchema = z.object({
 
 // ---- root ---------------------------------------------------------------------
 
+export const editSourceSchema = z.object({
+  /** Optional handle for the primary source; additional sources require ids. */
+  id: z.string().min(1).optional(),
+  /** Relative to content/: "library/<id>/media/mezzanine.mp4". */
+  relPath: z.string().min(1),
+  durationMs: ms,
+  width: z.number().int().positive(),
+  height: z.number().int().positive(),
+});
+export type EditSource = z.infer<typeof editSourceSchema>;
+
+export const additionalEditSourceSchema = editSourceSchema.extend({
+  id: z.string().min(1),
+});
+export type AdditionalEditSource = z.infer<typeof additionalEditSourceSchema>;
+
 export const editSchema = z.object({
   version: z.literal(EDIT_VERSION),
   videoId: z.string().min(1),
@@ -148,13 +189,9 @@ export const editSchema = z.object({
   title: z.string().min(1),
   /** Must match a scopes/<contentType>.md doc. */
   contentType: z.string().min(1),
-  source: z.object({
-    /** Relative to content/: "library/<id>/media/mezzanine.mp4". */
-    relPath: z.string().min(1),
-    durationMs: ms,
-    width: z.number().int().positive(),
-    height: z.number().int().positive(),
-  }),
+  source: editSourceSchema,
+  /** Extra synced camera/audio sources addressable by segments[].sourceId. */
+  sources: z.array(additionalEditSourceSchema).default([]),
   reframe: z
     .object({
       mode: z.enum(["crop", "fit-blur"]).default("crop"),
