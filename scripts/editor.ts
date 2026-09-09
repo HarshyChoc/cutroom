@@ -8,7 +8,7 @@ const program = new Command();
 
 program
   .name("editor")
-  .description("Claude-driven video editing pipeline (see CLAUDE.md)")
+  .description("Cutroom: local, schema-driven video editing")
   .showHelpAfterError();
 
 program
@@ -24,8 +24,9 @@ program
 
 program
   .command("ingest")
-  .description("Move videos from content/raw/ into the library (probe + workspace)")
-  .option("--copy", "copy instead of move (leaves originals in place)")
+  .description("Copy videos into the library (probe + workspace; originals stay in place)")
+  .option("--copy", "copy originals (the default)")
+  .option("--move", "move originals into the library; explicitly removes the source file")
   .option("--file <path>", "ingest a single file from anywhere")
   .action(async (opts) => {
     const { runIngest } = await import("./commands/ingest");

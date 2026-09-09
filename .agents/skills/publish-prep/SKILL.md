@@ -40,4 +40,4 @@ After a final render passes review, write
 - best posting window / series potential / what to A-B test next time
 ```
 
-Keep it tight — Seyvik should be able to copy-paste each block directly.
+Keep it tight — the creator should be able to copy-paste each block directly.

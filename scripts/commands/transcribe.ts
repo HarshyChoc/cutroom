@@ -139,7 +139,7 @@ const parseChannelSources = (
     if (!/^[a-z0-9][a-z0-9-]*$/i.test(sourceId)) {
       throw new EditorError(
         `Invalid source id "${sourceId}".`,
-        "Use letters, digits and dashes only, e.g. stephanie or seyvik.",
+        "Use letters, digits and dashes only, e.g. host or guest-1.",
       );
     }
     if (!existsSync(file)) {
@@ -304,16 +304,6 @@ const transcribeWithElevenLabs = async (
   if (sourceIdsByChannel.length > 0) {
     form.append("use_multi_channel", "true");
   }
-  for (const keyterm of [
-    "Truemed",
-    "HigherDose",
-    "HSA",
-    "FSA",
-    "Letter of Medical Necessity",
-  ]) {
-    form.append("keyterms", keyterm);
-  }
-
   const response = await fetch("https://api.elevenlabs.io/v1/speech-to-text", {
     method: "POST",
     headers: { "xi-api-key": apiKey },

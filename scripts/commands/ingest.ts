@@ -14,6 +14,7 @@ import { formatMs } from "../../shared/time";
 
 export interface IngestOptions {
   readonly copy?: boolean;
+  readonly move?: boolean;
   readonly file?: string;
 }
 
@@ -59,7 +60,7 @@ const ingestOne = async (
 
   const ext = path.extname(originalFilename).toLowerCase();
   const sourceDest = path.join(paths.dir, `source${ext}`);
-  if (options.copy) {
+  if (!options.move) {
     await copyFile(filePath, sourceDest);
   } else {
     await moveFile(filePath, sourceDest);
@@ -79,6 +80,7 @@ const ingestOne = async (
 };
 
 export const runIngest = async (options: IngestOptions): Promise<void> => {
+  if (options.copy && options.move) throw new EditorError("Choose --copy or --move, not both.");
   let files: string[];
   if (options.file) {
     if (!existsSync(options.file)) {

@@ -24,10 +24,10 @@ Never ship a final render you haven't looked at.
    `validate` → back to step 1.
 5. Clean? `npm run editor -- render <id>` (final, full res).
 6. `npm run editor -- verify <id>` again (now checks the final + stamps it).
-7. `open "content/output/<id>--<edit>.mp4"` so Seyvik sees the result.
+7. `open "content/output/<id>--<edit>.mp4"` so the creator sees the result.
 
 ## When QC stills aren't enough
 
-Stills can't show motion problems (jarring cuts, zoom speed). If Seyvik
+Stills can't show motion problems (jarring cuts, zoom speed). If the creator
 reports something feels off, open the preview file itself and scrub it, or
 launch `npm run editor -- studio <id>` and step through the timeline.

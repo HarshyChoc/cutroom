@@ -12,7 +12,7 @@ One long source → several named edits, each a complete short.
 1. Read the full transcript. Map the distinct ideas/moments — for each
    candidate clip you need: a hook line, a complete arc (setup → payoff),
    and a clean exit line. 2–5 candidates is typical.
-2. Rank them. Tell Seyvik what you found before rendering all of them:
+2. Rank them. Tell the creator what you found before rendering all of them:
    "I see 3 clips here: (1) the launch story, (2) the pricing rant,
    (3) the demo fail. Want all three?"
 3. For each approved clip:

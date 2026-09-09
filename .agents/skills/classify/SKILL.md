@@ -32,7 +32,7 @@ Decide which `scopes/<type>.md` doc governs this video's edit.
 6. Update `status.json` (read → modify → write, keep all other fields):
    set `contentType`, `classification: {confidence, topics}`, and
    `steps.classified` to the current ISO timestamp.
-7. **Low confidence or no scope fits?** Stop and ask Seyvik — show him 2–3
+7. **Low confidence or no scope fits?** Stop and ask the creator — show them 2–3
    frames, say what you see, and offer to set up a new type with the
    `new-scope` skill. Never force a bad match: the scope doc drives every
    creative decision downstream.

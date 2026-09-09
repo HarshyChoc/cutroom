@@ -1,12 +1,12 @@
 ---
 name: new-scope
-description: Create a new content-type scope doc by interviewing Seyvik in plain language. Use when classification finds no fitting type, or Seyvik wants a new style.
+description: Create a new content-type scope doc by interviewing the creator in plain language. Use when classification finds no fitting type, or the creator wants a new style.
 ---
 
 # Create a new scope doc
 
 The scope doc is the creative contract for a content type. Build it WITH
-Seyvik — don't invent his taste for him.
+the creator — don't invent their taste.
 
 ## Interview (plain language, one question at a time)
 
@@ -26,10 +26,10 @@ Seyvik — don't invent his taste for him.
 ## Then
 
 1. Copy `scopes/_template.md` → `scopes/<type-name>.md` (lowercase-dashes
-   name Seyvik agrees to).
-2. Fill every section from his answers — keep his phrasing where you can.
+   name the creator agrees to).
+2. Fill every section from their answers — keep their phrasing where you can.
 3. Translate the choices into the Defaults block (valid EDL values only:
    preset names from `shared/schemas/edit.ts`).
-4. Read it back to him in one short paragraph: "So: cold opens, choppy cuts,
-   big yellow captions, no music, under 40s. Right?" Adjust until he says yes.
+4. Read it back to them in one short paragraph: "So: cold opens, choppy cuts,
+   big yellow captions, no music, under 40s. Right?" Adjust until they confirm.
 5. Classify the waiting video against the new type and continue the pipeline.

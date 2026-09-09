@@ -136,7 +136,7 @@ export const overlaySchema = z.discriminatedUnion("type", [
     type: z.literal("image"),
     startMs: ms,
     endMs: ms,
-    /** Relative to content/, e.g. "assets/broll/truemed/red-light.png". */
+    /** Relative to content/, e.g. "assets/broll/explainer/diagram.png". */
     src: z.string().min(1),
     fit: z.enum(["cover", "contain"]).default("cover"),
     opacity: z.number().min(0).max(1).default(1),

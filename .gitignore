@@ -1,24 +1,30 @@
-# dependencies & caches
+# Dependencies and local build caches
 node_modules/
 .whisper/
 .remotion/
+.venv/
+__pycache__/
+.pytest_cache/
+*.tsbuildinfo
 *.log
 .DS_Store
+._*
 
-# media — footage and renders must NEVER be committed (use git add -f at your peril: don't)
+# Local credentials and agent preferences
+.env
+.env.*
+!.env.example
+!.env.*.example
+.claude/settings.json
+.claude/settings.local.json
+
+# Media, transcripts, edit plans, and render state stay local.
+# Keep public examples outside content/; never force-add customer media.
+content/library/
+content/output/
 content/raw/*
 !content/raw/.gitkeep
-content/output/*
-!content/output/.gitkeep
+content/assets/*
+!content/assets/music/
 content/assets/music/*
 !content/assets/music/.gitkeep
-
-# per-video workspace: keep small JSON/markdown, ignore heavy media artifacts
-content/library/*/source.*
-content/library/*/media/
-content/library/*/frames/*.jpg
-content/library/*/frames/*.jpeg
-content/library/*/frames/*.png
-content/library/*/whisper-raw.json
-content/library/*/elevenlabs-raw.json
-content/library/*/edits/*/qc/

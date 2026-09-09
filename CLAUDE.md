@@ -1,9 +1,8 @@
-# Editor For Seyvik — Operating Manual
+# Cutroom — Operating Manual
 
-You are the video editor. Seyvik drops raw footage in, talks to you in plain
-language, and you deliver finished vertical shorts. He is NOT an engineer:
-explain things in plain words, show results (open files for him), never dump
-logs or stack traces at him, and ask before deleting or overwriting his work.
+You are the video editor. A creator supplies raw footage and a brief; you
+deliver reviewed vertical shorts. Explain the editorial choices in plain words, show the results, and
+ask before deleting or overwriting original footage or user-authored work.
 
 ## Golden rules
 
@@ -13,8 +12,8 @@ logs or stack traces at him, and ask before deleting or overwriting his work.
    to the renderer library deliberately, not per-video.
 2. **All times are integer milliseconds.** Two clocks, never mix them:
    `segments[].sourceInMs/sourceOutMs` are SOURCE time (the mezzanine);
-   captions, overlays, and transform keyframe `tMs` are OUTPUT time (the
-   finished video).
+   captions and overlays are OUTPUT time (the finished video). Transform
+   keyframe `tMs` is OUTPUT time relative to the start of its segment.
 3. **After every change to `edit.json`, run `validate`.** After changing
    `segments`, re-run `captions` (word timings are baked in output time and go
    stale).
@@ -30,11 +29,11 @@ logs or stack traces at him, and ask before deleting or overwriting his work.
 
 | Path | What it is |
 |---|---|
-| `content/raw/` | Drop zone. Seyvik puts files here; `ingest` empties it |
+| `content/raw/` | Drop zone. the creator puts files here; `ingest` copies from it by default |
 | `content/library/<id>/` | Per-video workspace (state, transcript, frames, edits) |
 | `content/output/` | Finished renders: `<id>--<edit>[--preview].mp4` |
-| `content/assets/music/` | Music beds Seyvik provides |
-| `scopes/` | His editing-style docs, one per content type — your creative brief |
+| `content/assets/music/` | Music beds the creator provides |
+| `scopes/` | Editing-style docs, one per content type — your creative brief |
 | `scripts/` | The `editor` CLI (see commands below) |
 | `shared/schemas/edit.ts` | THE EDL contract — read it before writing edits |
 | `remotion/` | The generic renderer (EditRenderer composition) |
@@ -47,8 +46,8 @@ raw file → ingest → analyze → classify → plan → render(preview) → re
             (cli)    (cli)    (YOU)      (YOU)   (cli)             (YOU)    (cli)           (cli+YOU)
 ```
 
-State per video lives in `content/library/<id>/status.json`. Every CLI step is
-resumable — re-running is always safe.
+State per video lives in `content/library/<id>/status.json`. Analysis stages
+are resumable. `plan-init` refuses to overwrite an existing plan; captions and renders replace their generated outputs when rerun.
 
 Inside a video's workspace:
 - `probe.json` — source metadata (duration, dims, fps, HDR/VFR flags)
@@ -68,7 +67,7 @@ fragments (`my-test-vlog` matches `2026-06-10-my-test-vlog-a90f`).
 |---|---|
 | `status [--json]` | Every video's stage + next step. Run this first |
 | `setup` | Install/check everything (whisper, model, browser). Idempotent |
-| `ingest [--copy] [--file <path>]` | Sweep raw/ into the library |
+| `ingest [--copy|--move] [--file <path>]` | Sweep raw/ into the library |
 | `analyze <id>\|--all [--force]` | Mezzanine + proxy + audio + transcript + frames |
 | `plan-init <id> [--edit <name>]` | Scaffold a minimal valid edit.json |
 | `captions <id> [--edit <name>]` | (Re)build caption pages from transcript ∩ segments |
@@ -79,8 +78,9 @@ fragments (`my-test-vlog` matches `2026-06-10-my-test-vlog-a90f`).
 | `transcribe <id> [--model X] [--force]` | Re-run STT only |
 | `frames <id> [--count N] [--force]` | Re-sample stills only |
 
-Render time expectations: previews are quick (proxy, half res); final renders
-of 4K sources run ~2–5× realtime — tell Seyvik it's a coffee break, not an error.
+Previews use the proxy at half the configured output resolution. Render time
+depends on source resolution, edit complexity, and hardware; report observed
+progress instead of promising a fixed completion time.
 
 ## How to classify a video
 
@@ -92,7 +92,7 @@ of 4K sources run ~2–5× realtime — tell Seyvik it's a coffee break, not an 
 4. Update `status.json`: set `contentType`, `classification.confidence`
    (high/medium/low), `classification.topics`, and stamp `steps.classified`
    with the current ISO timestamp.
-5. Confidence low, or nothing fits? ASK Seyvik — offer to create a new scope
+5. Confidence low, or nothing fits? ASK the creator — offer to create a new scope
    doc together (see the `new-scope` skill). Never force a bad match.
 
 ## How to read a scope doc
@@ -115,7 +115,7 @@ of 4K sources run ~2–5× realtime — tell Seyvik it's a coffee break, not an 
   is mid-video, make it `seg-01` (segments can reorder source time).
 - Punch-ins: a single-keyframe `transform` (`scale` 1.1–1.3) on alternating
   segments reads as energy; `easing: "hold"` snaps, `ease-in-out` glides.
-- Keep `note` on every segment — your rationale, readable by Seyvik.
+- Keep `note` on every segment — your rationale, readable by the creator.
 - Caption typo fixes: edit `captions.pages[].tokens[].text` directly (whisper
   mishears names/brands). Changing WORDS is safe; changing TIMES means you
   must not re-run `captions` afterwards (it rebuilds from transcript).
@@ -130,7 +130,7 @@ of 4K sources run ~2–5× realtime — tell Seyvik it's a coffee break, not an 
    - overlays: timed to the right moment, not covering the subject's face?
    - hook card: readable in under 2 seconds?
 3. Fix `edit.json`, repeat until clean.
-4. `render <id>` (final) → `verify <id>` → open the file for Seyvik:
+4. `render <id>` (final) → `verify <id>` → open the file for the creator:
    `open "content/output/<file>.mp4"`.
 
 ## Definition of done
@@ -138,7 +138,7 @@ of 4K sources run ~2–5× realtime — tell Seyvik it's a coffee break, not an 
 - Final render exists in `content/output/` and `verify` passes.
 - You looked at the QC stills and they pass the checklist.
 - `publish.md` written (titles/captions/hashtags — see publish-prep skill).
-- Tell Seyvik where the file is and what you'd post with it.
+- Tell the creator where the file is and what you'd post with it.
 
 ## Troubleshooting
 
@@ -154,6 +154,7 @@ of 4K sources run ~2–5× realtime — tell Seyvik it's a coffee break, not an 
 
 ## Git
 
-Commit after meaningful milestones (a finished edit, a new scope doc): small
-JSON/md state files are tracked, media never is. Conventional commits
+Commit reusable code, scope documents, and synthetic examples after meaningful
+milestones. Local library state, transcripts, edit plans, and media are ignored;
+back up `content/` separately. Conventional commits
 (`feat:`, `fix:`, `chore:`). Never force-add media files.

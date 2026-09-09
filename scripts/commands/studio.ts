@@ -11,7 +11,7 @@ import { startMediaServer } from "../lib/media-server";
 import { editPaths, REPO_ROOT } from "../lib/paths";
 
 // `editor studio` — Remotion Studio with the media server alongside, so
-// Seyvik can scrub an edit visually. Blocks until the studio is closed.
+// Scrub an edit visually. Blocks until the studio is closed.
 
 export interface StudioOptions {
   readonly edit: string;

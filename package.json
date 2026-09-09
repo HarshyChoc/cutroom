@@ -1,17 +1,18 @@
 {
-  "name": "editor-for-seyvik",
+  "name": "cutroom",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Claude Code-driven video editing workspace: drop footage in, get edited vertical shorts out.",
+  "description": "A local, schema-driven editing pipeline for vertical video.",
   "engines": {
-    "node": ">=20"
+    "node": ">=22.12.0"
   },
   "scripts": {
     "editor": "tsx scripts/editor.ts",
     "setup": "tsx scripts/editor.ts setup",
     "studio": "tsx scripts/editor.ts studio",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test tests/*.test.ts"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.475",
@@ -36,5 +37,6 @@
     "@types/react": "19.2.17",
     "tsx": "4.22.4",
     "typescript": "5.9.3"
-  }
+  },
+  "license": "MIT"
 }

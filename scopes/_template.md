@@ -1,57 +1,46 @@
-# <content-type-name>
-
-> Copy this file to `scopes/<type-name>.md` (lowercase, dashes). The prose
-> sections guide Claude's judgment; the Defaults block at the bottom is
-> copied 1:1 into edit.json.
+# Content type name
 
 ## Identity
 
-What this content type IS, in 2-3 sentences. Examples of creators/videos
-whose style this should match.
+Describe the audience, source footage, and the idea a finished clip should convey.
 
 ## Hook rules
 
-What makes a strong opening for this type. Title card or cold open? What
-should the first 3 seconds accomplish?
+Open with a complete, accurate thought. Record whether the opening uses speech, a title card, or both.
 
-## Pacing & cuts
+## Pacing
 
-How aggressive are jump cuts? Keep or kill pauses? Target words-per-minute
-feel? When to speed up (`speed: 1.1-1.5`) vs leave natural?
+Describe the desired rhythm and approximate duration. Preserve meaning when removing pauses or filler.
 
 ## Captions
 
-Look and feel (preset), word count per page, uppercase or not, highlight
-color preference.
+Choose a preset, capitalization, page length, and comfortable vertical position. Check names against the source.
 
-## Zooms
+## Zooms and framing
 
-When to punch in (emphasis? topic changes? every N seconds?), how strong
-(1.1 subtle … 1.3 aggressive), snap (`hold`) or glide (`ease-in-out`)?
-
-## Title cards & overlays
-
-Hook card style, mid-video text overlays (context pills? stickers?), end
-card with what CTA?
+State when a punch-in is useful and where the subject should sit. Avoid arbitrary camera moves.
 
 ## Music
 
-None / which vibe from content/assets/music/, at what volume, ducked under
-speech or not.
+Specify whether music belongs in this format. Use only supplied, licensed audio.
 
 ## Don'ts
 
-Type-specific things to never do.
+List concrete restrictions or recurring mistakes to avoid.
 
 ## Defaults
 
-```yaml
-targetDurationSec: 25-45        # hard ceiling for this type
-captionPreset: bold-center      # bold-center | clean-lower | minimal
-maxWordsPerPage: 4
-uppercase: true
-captionYPct: 70
-zoomDefault: 1.15
-music: none                     # none | filename in assets/music/
-endCard: false                  # true → add an endcard title-card overlay
+Copy these values into the matching fields of a scaffolded edit plan. These are EDL fields, not a separate configuration format.
+
+```json
+{
+  "captions": {
+    "style": {
+      "preset": "clean-lower",
+      "yPct": 72,
+      "maxWordsPerPage": 4
+    }
+  },
+  "output": { "width": 1080, "height": 1920, "fps": 30 }
+}
 ```

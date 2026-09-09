@@ -19,7 +19,8 @@ import {
   WHISPER_DIR,
 } from "../lib/paths";
 
-const MIN_NODE_MAJOR = 20;
+const MIN_NODE_MAJOR = 22;
+const MIN_NODE_MINOR = 12;
 
 export interface SetupOptions {
   readonly model?: string;
@@ -28,10 +29,10 @@ export interface SetupOptions {
 }
 
 const checkNode = (): void => {
-  const major = Number(process.versions.node.split(".")[0]);
-  if (major < MIN_NODE_MAJOR) {
+  const [major = 0, minor = 0] = process.versions.node.split(".").map(Number);
+  if (major < MIN_NODE_MAJOR || (major === MIN_NODE_MAJOR && minor < MIN_NODE_MINOR)) {
     throw new EditorError(
-      `Node ${process.versions.node} is too old (need ${MIN_NODE_MAJOR}+).`,
+      `Node ${process.versions.node} is too old (need ${MIN_NODE_MAJOR}.${MIN_NODE_MINOR}.0+).`,
       "Install a current Node LTS: brew install node — or use nvm.",
     );
   }
